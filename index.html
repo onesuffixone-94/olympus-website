@@ -1,0 +1,1950 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#2E3033">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#2E3033"/>
+    <rect x="360" y="240" width="200" height="260" rx="10" fill="none" stroke="#F8F7F5" stroke-width="8"/>
+    <path d="M400 320h120M400 372h120M400 424h74" stroke="#F8F7F5" stroke-width="8" stroke-linecap="round"/>
+    <path d="M600 400h68" stroke="#63C8DC" stroke-width="8" stroke-linecap="round" stroke-dasharray="20 22"/>
+    <circle cx="780" cy="400" r="82" fill="none" stroke="#63C8DC" stroke-width="8"/>
+    <path d="m744 402 26 26 50-56" stroke="#B4452F" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  body { margin: 0; background: #F8F7F5; -webkit-font-smoothing: antialiased; }
+  a { color: var(--ink, #2E3033); text-decoration: none; }
+  a:hover { color: var(--accent, #0B7386); }
+  @media (max-width: 1200px) {
+    [data-r~="m2"] { grid-template-columns: repeat(2, 1fr) !important; }
+  }
+  @media (max-width: 900px) {
+    [data-r~="g"] { grid-template-columns: 1fr !important; }
+    [style*="subgrid"] { grid-row: auto !important; grid-template-rows: none !important; display: flex !important; flex-direction: column !important; border-left: none !important; padding: 0 !important; }
+    [data-r~="p"] { padding-left: 22px !important; padding-right: 22px !important; }
+    [data-r~="s"] { position: static !important; }
+    [data-r~="h"] { height: auto !important; min-height: 260px !important; }
+    h1 { font-size: 36px !important; line-height: 1.1 !important; }
+    h2 { font-size: 28px !important; }
+    img, svg, iframe { max-width: 100%; }
+  }
+  @media (max-width: 900px) {
+    [data-r~="neg"] { margin-left: 0 !important; }
+    [data-r~="h1hero"] { min-height: 0 !important; }
+    header [data-r~="p"] { gap: 14px !important; }
+    iframe { height: 320px !important; }
+  }
+  @media (max-width: 620px) {
+    h1 { font-size: 28px !important; }
+    h2 { font-size: 24px !important; }
+    [data-r~="p"] { padding-left: 18px !important; padding-right: 18px !important; }
+    [data-r~="p"][style*="padding: 76px"], [data-r~="p"][style*="padding: 84px"] { padding-top: 44px !important; }
+    [data-r~="h"] { min-height: 220px !important; }
+  }
+  h1, h2, h3, h4, p, span, div, a, label { overflow-wrap: break-word; }
+  @media (min-width: 1600px) {
+    [data-r~="hero"] { height: 640px !important; }
+    [data-r~="work"] { height: 380px !important; }
+  }
+  [data-r~="whyh"] { min-height: 47px; }
+  [data-r~="whyb"] { min-height: 130px; }
+  @media (max-width: 1239px) {
+    [data-r~="whyh"] { min-height: 94px; }
+    [data-r~="whyb"] { min-height: 163px; }
+  }
+  @media (max-width: 900px) {
+    [data-r~="whyh"] { min-height: 0; }
+    [data-r~="whyb"] { min-height: 130px; }
+  }
+  ::selection { background: var(--rule, #DADEE2); }
+  @keyframes om-word-a { from { opacity: 0; transform: translateY(0.45em); } to { opacity: 1; transform: none; } }
+  @keyframes om-word-b { from { opacity: 0; transform: translateY(0.45em); } to { opacity: 1; transform: none; } }
+  @keyframes om-grow { 0%, 100% { transform: scaleY(0.35); } 50% { transform: scaleY(1); } }
+  @keyframes om-draw { 0% { stroke-dashoffset: 60; } 45%, 100% { stroke-dashoffset: 0; } }
+  @keyframes om-spin { to { transform: rotate(360deg); } }
+  @keyframes om-spin-rev { to { transform: rotate(-360deg); } }
+  @keyframes om-pulse { 0%, 100% { opacity: 0.25; r: 3; } 50% { opacity: 1; r: 5; } }
+  @keyframes om-dash { to { stroke-dashoffset: -28; } }
+  @keyframes om-fill1 { 0%, 17% { fill-opacity: 0; } 22%, 94% { fill-opacity: 1; } 98%, 100% { fill-opacity: 0; } }
+  @keyframes om-fill2 { 0%, 23% { fill-opacity: 0; } 28%, 94% { fill-opacity: 1; } 98%, 100% { fill-opacity: 0; } }
+  @keyframes om-fill3 { 0%, 30% { fill-opacity: 0; } 35%, 94% { fill-opacity: 1; } 98%, 100% { fill-opacity: 0; } }
+  @keyframes om-fill4 { 0%, 36% { fill-opacity: 0; } 41%, 94% { fill-opacity: 1; } 98%, 100% { fill-opacity: 0; } }
+  @keyframes om-fill5 { 0%, 42% { fill-opacity: 0; } 47%, 94% { fill-opacity: 1; } 98%, 100% { fill-opacity: 0; } }
+  @keyframes om-fill6 { 0%, 49% { fill-opacity: 0; } 54%, 94% { fill-opacity: 1; } 98%, 100% { fill-opacity: 0; } }
+  @keyframes om-fill7 { 0%, 55% { fill-opacity: 0; } 60%, 94% { fill-opacity: 1; } 98%, 100% { fill-opacity: 0; } }
+  @keyframes om-fill8 { 0%, 62% { fill-opacity: 0; } 67%, 94% { fill-opacity: 1; } 98%, 100% { fill-opacity: 0; } }
+  @keyframes om-stroke { 0%, 17% { stroke: #C4C8CD; } 67%, 94% { stroke: #2E3033; } 98%, 100% { stroke: #C4C8CD; } }
+  @keyframes om-scan { 0%, 4% { transform: translateX(0); } 64%, 88% { transform: translateX(126px); } 96%, 100% { transform: translateX(0); } }
+  @keyframes om-sw1 { 0%, 4% { fill-opacity: 0; } 9%, 88% { fill-opacity: 1; } 96%, 100% { fill-opacity: 0; } }
+  @keyframes om-sw2 { 0%, 24% { fill-opacity: 0; } 29%, 88% { fill-opacity: 1; } 96%, 100% { fill-opacity: 0; } }
+  @keyframes om-sw3 { 0%, 44% { fill-opacity: 0; } 49%, 88% { fill-opacity: 1; } 96%, 100% { fill-opacity: 0; } }
+  @keyframes om-sw4 { 0%, 60% { fill-opacity: 0; } 65%, 88% { fill-opacity: 1; } 96%, 100% { fill-opacity: 0; } }
+  @keyframes om-ck1 { 0%, 8% { opacity: 0; } 13%, 88% { opacity: 1; } 96%, 100% { opacity: 0; } }
+  @keyframes om-ck2 { 0%, 20% { opacity: 0; } 25%, 88% { opacity: 1; } 96%, 100% { opacity: 0; } }
+  @keyframes om-ck3 { 0%, 32% { opacity: 0; } 37%, 88% { opacity: 1; } 96%, 100% { opacity: 0; } }
+  @keyframes om-ck4 { 0%, 44% { opacity: 0; } 49%, 88% { opacity: 1; } 96%, 100% { opacity: 0; } }
+  @keyframes om-ck5 { 0%, 56% { opacity: 0; } 61%, 88% { opacity: 1; } 96%, 100% { opacity: 0; } }
+  @keyframes om-bar { 0%, 6% { transform: scaleX(0); } 62%, 88% { transform: scaleX(1); } 96%, 100% { transform: scaleX(0); } }
+  @keyframes om-travel { 0%, 4% { transform: translateX(0); opacity: 0; } 10% { opacity: 1; } 80% { transform: translateX(186px); opacity: 1; } 88%, 100% { transform: translateX(186px); opacity: 0; } }
+  [data-r~="whyh"] { min-height: 47px; }
+  [data-r~="whyb"] { min-height: 130px; }
+  @media (max-width: 1239px) {
+    [data-r~="whyh"] { min-height: 94px; }
+    [data-r~="whyb"] { min-height: 163px; }
+  }
+  @media (max-width: 900px) {
+    [data-r~="whyh"] { min-height: 0; }
+    [data-r~="whyb"] { min-height: 130px; }
+  }
+  ::selection { background: var(--rule, #DADEE2); }
+</style>
+</helmet>
+
+<div style="min-height: 100vh; background: var(--paper, #F8F7F5); font-family: var(--body, 'Roboto'), sans-serif; {{ themeVars }}">
+
+  <header style="position: sticky; top: 0; z-index: 40; background: var(--paper-veil, rgba(248,247,245,0.94)); backdrop-filter: blur(10px); border-bottom: 1px solid var(--rule, #DADEE2);">
+    <div  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 18px 40px; display: flex; align-items: center; justify-content: space-between; gap: 32px;">
+      <div onClick="{{ goHome }}" style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+        <img src="./assets/olympus-mark.png" alt="Olympus Premedia" style="width: 30px; height: 30px; object-fit: contain; display: block;">
+        <div style="display: flex; align-items: center; gap: 5px;">
+          <span style="font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 21px; letter-spacing: -0.02em; color: var(--ink, #2E3033);">Olympus</span>
+          <span style="font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: 400; font-size: 21px; letter-spacing: -0.02em; color: var(--ink-soft, #6E747B);">Premedia</span>
+        </div>
+      </div>
+      <sc-if value="{{ navFull }}" hint-placeholder-val="{{ true }}">
+      <nav style="display: flex; align-items: center; gap: 2px;">
+        <div onClick="{{ goHome }}" style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; padding: 9px 12px; border-radius: var(--pill, 6px); white-space: nowrap; cursor: pointer; color: {{ homeColor }}; background: {{ homeBg }}; box-shadow: {{ homeShadow }};" style-hover="color: var(--accent, #0B7386);">Home</div>
+        <div onMouseEnter="{{ openMenu }}" onMouseLeave="{{ closeMenu }}" style="position: relative;">
+          <div onClick="{{ goServices }}" style="display: flex; align-items: center; gap: 6px; font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; padding: 9px 12px; border-radius: var(--pill, 6px); white-space: nowrap; cursor: pointer; color: {{ servicesColor }}; background: {{ servicesBg }}; box-shadow: {{ servicesShadow }};" style-hover="color: var(--accent, #0B7386);">
+            Services
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex: none; transform: {{ caretRotate }}; transition: transform 180ms ease;"><path d="m5 9 7 7 7-7"></path></svg>
+          </div>
+          <div style="position: absolute; top: 100%; left: 0; padding-top: 10px; opacity: {{ menuOpacity }}; pointer-events: {{ menuEvents }}; transition: opacity 160ms ease; z-index: 60;">
+            <div style="background: var(--paper, #F8F7F5); border: 1px solid var(--rule, #DADEE2); box-shadow: 0 14px 34px rgba(46,48,51,0.12); min-width: 340px; padding: 10px 0;">
+              <sc-for list="{{ serviceLinks }}" as="s" hint-placeholder-count="10">
+                <div onClick="{{ s.open }}" style="display: flex; align-items: baseline; gap: 12px; padding: 9px 20px; cursor: pointer;" style-hover="background: var(--paper-3, #EBEAE6);">
+                  <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; color: var(--ink-soft, #6E747B); flex: none;">{{ s.num }}</span>
+                  <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; color: var(--ink, #2E3033);">{{ s.title }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+        <sc-for list="{{ restNavItems }}" as="item" hint-placeholder-count="3">
+          <div onClick="{{ item.go }}" style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; padding: 9px 12px; border-radius: var(--pill, 6px); white-space: nowrap; cursor: pointer; color: {{ item.color }}; background: {{ item.bg }}; box-shadow: {{ item.shadow }};" style-hover="color: var(--accent, #0B7386);">{{ item.label }}</div>
+        </sc-for>
+        <div onClick="{{ goContact }}" style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 16px; color: var(--paper, #F8F7F5); background: var(--accent, #0B7386); padding: 11px 19px; border-radius: var(--pill, 6px); margin-left: 8px; white-space: nowrap; cursor: pointer;" style-hover="background: var(--ink, #2E3033); color: var(--paper, #F8F7F5);">Contact Us</div>
+      </nav>
+      </sc-if>
+      <sc-if value="{{ navCompact }}" hint-placeholder-val="{{ false }}">
+      <div style="position: relative; display: flex; align-items: center; gap: 10px;">
+        <div onClick="{{ goContact }}" style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 16px; color: var(--paper, #F8F7F5); background: var(--accent, #0B7386); padding: 11px 19px; border-radius: var(--pill, 6px); white-space: nowrap; cursor: pointer;" style-hover="background: var(--ink, #2E3033);">Contact Us</div>
+        <div onClick="{{ toggleNavPanel }}" style="display: flex; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; padding: 0 10px; border: 1px solid var(--rule-strong, #C4C8CD); border-radius: var(--pill, 6px); cursor: pointer;" style-hover="border-color: var(--ink, #2E3033);">
+          <span style="display: block; height: 1.6px; background: var(--ink, #2E3033);"></span>
+          <span style="display: block; height: 1.6px; background: var(--ink, #2E3033);"></span>
+          <span style="display: block; height: 1.6px; background: var(--ink, #2E3033);"></span>
+        </div>
+        <div style="position: absolute; top: calc(100% + 12px); right: 0; min-width: 250px; background: var(--paper, #F8F7F5); border: 1px solid var(--rule, #DADEE2); box-shadow: 0 16px 38px rgba(46,48,51,0.10); padding: 8px 0; opacity: {{ navPanelOpacity }}; pointer-events: {{ navPanelEvents }}; transition: opacity 160ms ease; z-index: 70;">
+          <sc-for list="{{ navPanelItems }}" as="item" hint-placeholder-count="6">
+            <div onClick="{{ item.go }}" style="padding: 12px 22px; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 16px; color: var(--ink, #2E3033); cursor: pointer;" style-hover="background: var(--paper-3, #EBEAE6);">{{ item.label }}</div>
+          </sc-for>
+        </div>
+      </div>
+      </sc-if>
+    </div>
+  </header>
+
+  <!-- ===================== HOME ===================== -->
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+  <main>
+    <section  data-r="g p" style="max-width: 1240px; margin: 0 auto; padding: 84px 40px 72px; display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,0.95fr); gap: 64px; align-items: center;">
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <div style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent, #0B7386);">Packaging graphics, right first time</div>
+        <h1 data-r="h1hero" style="margin: 0; min-height: 148px; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 52px; line-height: 1.1; letter-spacing: -0.035em; color: var(--ink, #2E3033); text-wrap: pretty;">Packaging Graphics and <br>Pre-Media services <br>for <span style="display: inline-block; color: var(--accent, #0B7386); white-space: nowrap; animation: {{ wordAnim }}; animation-play-state: var(--anim, running);">{{ audience }}</span></h1>
+        <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 21px; line-height: 1.55; color: var(--text, #3E4247); max-width: 540px; text-wrap: pretty;">We systematise the journey from creative concept to print-ready file, giving you unmatched accuracy, dependable turnaround and an average of <span style="color: var(--ink, #2E3033); font-weight: 400;">30%</span> cost savings.</p>
+        <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 14px; padding-top: 6px;">
+          <a href="https://calendly.com/olympuspkg/" target="_blank" style="align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; box-sizing: border-box; border-radius: 6px; white-space: nowrap; cursor: pointer; transition: transform 140ms ease, background 140ms ease, color 140ms ease; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: 600; font-size: 17px; color: var(--paper, #F8F7F5); background: var(--accent, #0B7386);" style-hover="background: var(--ink, #2E3033); transform: translateY(-1px);">Book a Packaging Graphics Audit</a>
+          <div onClick="{{ goServices }}" style="align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; box-sizing: border-box; border-radius: 6px; white-space: nowrap; cursor: pointer; transition: transform 140ms ease, background 140ms ease, color 140ms ease; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: 600; font-size: 17px; color: var(--ink, #2E3033); background: transparent; border: 1px solid var(--ink, #2E3033);" style-hover="background: var(--ink, #2E3033); color: var(--paper, #F8F7F5); transform: translateY(-1px);">Explore our services &rarr;</div>
+        </div>
+      </div>
+      <div  data-r="h hero" style="position: relative; height: 560px; min-width: 0;">
+        <sc-for list="{{ heroSlides }}" as="s" hint-placeholder-count="3">
+          <div style="position: absolute; inset: 0; opacity: {{ s.opacity }}; transition: opacity 700ms ease; pointer-events: {{ s.events }};">
+            <image-slot id="{{ s.slot }}" shape="rounded" radius="4" placeholder="{{ s.hint }}"></image-slot>
+          </div>
+        </sc-for>
+        <div style="position: absolute; bottom: 16px; right: 16px; display: flex; gap: 7px; z-index: 2;">
+          <sc-for list="{{ heroSlides }}" as="s" hint-placeholder-count="3">
+            <div onClick="{{ s.pick }}" style="width: 26px; height: 4px; background: {{ s.dot }}; cursor: pointer; border-radius: var(--pill, 6px);"></div>
+          </sc-for>
+        </div>
+        <div style="position: absolute; bottom: -22px; left: -22px; z-index: 2; background: var(--ink, #2E3033); color: var(--paper, #F8F7F5); padding: 18px 22px; display: flex; flex-direction: column; gap: 2px; pointer-events: none;">
+          <span style="font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 28px; letter-spacing: -0.015em; line-height: 1;">350,000+</span>
+          <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; color: var(--ink-mist, #B8BCC2);">SKUs delivered</span>
+        </div>
+      </div>
+    </section>
+
+      <section style="background: var(--ink, #2E3033);">
+        <div  data-r="g p" style="max-width: 1240px; margin: 0 auto; padding: 34px 40px; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); grid-template-rows: auto auto auto;">
+          <div style="display: grid; grid-row: 1 / span 3; grid-template-rows: subgrid; row-gap: 10px; align-content: start; padding: 0 34px 0 0;">
+            <span style="width: 22px; height: 2px; background: var(--accent-soft, #63C8DC);"></span>
+            <span style="font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 28px; line-height: 1; letter-spacing: -0.015em; color: var(--paper, #F8F7F5); display: flex; align-items: flex-end; min-height: 32px;">27+ years</span>
+            <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mist, #B8BCC2);">Remote delivery experience</span>
+          </div>
+          <div style="display: grid; grid-row: 1 / span 3; grid-template-rows: subgrid; row-gap: 10px; align-content: start; padding: 0 34px; border-left: 1px solid var(--ink-line, #4A4D52);">
+            <span style="width: 22px; height: 2px; background: var(--accent-soft, #63C8DC);"></span>
+            <span style="font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 28px; line-height: 1; letter-spacing: -0.015em; color: var(--paper, #F8F7F5); display: flex; align-items: flex-end; min-height: 32px;">120+</span>
+            <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mist, #B8BCC2);">Studio capacity</span>
+          </div>
+          <div style="display: grid; grid-row: 1 / span 3; grid-template-rows: subgrid; row-gap: 10px; align-content: start; padding: 0 0 0 34px; border-left: 1px solid var(--ink-line, #4A4D52);">
+            <span style="width: 22px; height: 2px; background: var(--accent-soft, #63C8DC);"></span>
+            <span style="display: flex; flex-wrap: wrap; gap: 5px 7px; align-items: flex-end; min-height: 32px; min-width: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 28px; line-height: 1; letter-spacing: -0.015em; color: var(--paper, #F8F7F5);">
+              <span>ESKO</span><span style="color: var(--ink-soft, #6E747B);">/</span><span>Adobe</span><span style="color: var(--ink-soft, #6E747B);">/</span><span>GMG</span><span style="color: var(--ink-soft, #6E747B);">/</span><span>PACKZ</span>
+            </span>
+            <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mist, #B8BCC2);">Industry leading tech stack</span>
+          </div>
+        </div>
+      </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 78px 40px 20px;">
+      <div  data-r="g" style="display: grid; grid-template-columns: minmax(0,4fr) minmax(0,8fr); gap: 48px; align-items: start;">
+        <div  data-r="s" style="display: flex; flex-direction: column; gap: 18px; position: sticky; top: 104px;">
+          <span style="display: block; width: 48px; height: 3px; background: var(--accent, #0B7386);"></span>
+          <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; line-height: 1.1; letter-spacing: -0.03em; color: var(--ink, #2E3033);">What we do</h2>
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">Seven disciplines, one studio. Work moves between them without files being rebuilt or re-checked.</p>
+          <div onClick="{{ goServices }}" style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; color: var(--accent, #0B7386); cursor: pointer;" style-hover="color: var(--ink, #2E3033);">All services &rarr;</div>
+          <div style="margin-top: 24px; max-width: 380px;">
+            <svg viewBox="0 0 560 300" fill="none" style="width: 100%; height: auto; display: block;">
+            <path d="M12 278h536" stroke="#DADEE2" stroke-width="1"></path>
+
+            <!-- gable-top carton -->
+            <g>
+              <path d="M88 122l41-30 41 30z" fill="#F8F7F5" stroke="#C4C8CD" stroke-width="1.4" style="animation: om-stroke 9s linear infinite; animation-play-state: var(--anim, running);"></path>
+              <path d="M88 122h82v128H88z" fill="#F8F7F5" stroke="#C4C8CD" stroke-width="1.4" style="animation: om-stroke 9s linear infinite; animation-play-state: var(--anim, running);"></path>
+              <g style="fill-opacity: 0; animation: om-fill2 9s linear infinite; animation-play-state: var(--anim, running);">
+                <path d="M88 122l41-30 41 30z" fill="#63C8DC"></path>
+                <path d="M88 122h82v128H88z" fill="#0B7386"></path>
+                <rect x="88" y="140" width="82" height="10" fill="#F8F7F5"></rect>
+                <rect x="98" y="196" width="62" height="34" fill="#2E3033"></rect>
+              </g>
+            </g>
+
+            <!-- wide folding carton -->
+            <g>
+              <path d="M258 96l16-13h118l-16 13z" fill="#F8F7F5" stroke="#C4C8CD" stroke-width="1.4" style="animation: om-stroke 9s linear infinite; animation-play-state: var(--anim, running);"></path>
+              <path d="M376 96l16-13v154l-16 13z" fill="#F8F7F5" stroke="#C4C8CD" stroke-width="1.4" style="animation: om-stroke 9s linear infinite; animation-play-state: var(--anim, running);"></path>
+              <path d="M258 96h118v154H258z" fill="#F8F7F5" stroke="#C4C8CD" stroke-width="1.4" style="animation: om-stroke 9s linear infinite; animation-play-state: var(--anim, running);"></path>
+              <g style="fill-opacity: 0; animation: om-fill4 9s linear infinite; animation-play-state: var(--anim, running);">
+                <path d="M258 96l16-13h118l-16 13z" fill="#63C8DC"></path>
+                <path d="M376 96l16-13v154l-16 13z" fill="#0B7386"></path>
+                <path d="M258 96h118v154H258z" fill="#0B7386"></path>
+                <rect x="258" y="112" width="118" height="9" fill="#B4452F"></rect>
+                <rect x="274" y="150" width="86" height="70" fill="#F8F7F5"></rect>
+                <rect x="286" y="168" width="62" height="34" fill="#2E3033"></rect>
+              </g>
+            </g>
+
+            <!-- soda can -->
+            <g>
+              <path d="M20 146v96a30 8 0 0 0 60 0v-96" fill="#F8F7F5" stroke="#C4C8CD" stroke-width="1.4" style="animation: om-stroke 9s linear infinite; animation-play-state: var(--anim, running);"></path>
+              <ellipse cx="50" cy="146" rx="30" ry="8" fill="#F8F7F5" stroke="#C4C8CD" stroke-width="1.4" style="animation: om-stroke 9s linear infinite; animation-play-state: var(--anim, running);"></ellipse>
+              <g style="fill-opacity: 0; animation: om-fill1 9s linear infinite; animation-play-state: var(--anim, running);">
+                <path d="M20 146v96a30 8 0 0 0 60 0v-96" fill="#2E3033"></path>
+                <rect x="20" y="176" width="60" height="30" fill="#0B7386"></rect>
+                <rect x="20" y="212" width="60" height="4" fill="#63C8DC"></rect>
+                <ellipse cx="50" cy="146" rx="30" ry="8" fill="#C4C8CD"></ellipse>
+              </g>
+            </g>
+
+            <!-- stand-up pouch -->
+            <g>
+              <rect x="188" y="118" width="54" height="12" rx="3" fill="#F8F7F5" stroke="#C4C8CD" stroke-width="1.4" style="animation: om-stroke 9s linear infinite; animation-play-state: var(--anim, running);"></rect>
+              <path d="M178 250V138c0-6 4-8 10-9l27-3 27 3c6 1 10 3 10 9v112z" fill="#F8F7F5" stroke="#C4C8CD" stroke-width="1.4" style="animation: om-stroke 9s linear infinite; animation-play-state: var(--anim, running);"></path>
+              <g style="fill-opacity: 0; animation: om-fill3 9s linear infinite; animation-play-state: var(--anim, running);">
+                <rect x="188" y="118" width="54" height="12" rx="3" fill="#C4C8CD"></rect>
+                <path d="M178 250V138c0-6 4-8 10-9l27-3 27 3c6 1 10 3 10 9v112z" fill="#2E3033"></path>
+                <rect x="178" y="200" width="74" height="34" fill="#0B7386"></rect>
+                <rect x="190" y="152" width="50" height="8" rx="4" fill="#63C8DC"></rect>
+              </g>
+            </g>
+
+            <!-- squeeze tube, standing on cap -->
+            <g>
+              <path d="M400 236V146c0-8 3-12 8-14l24-1c5 2 8 6 8 14v90z" fill="#F8F7F5" stroke="#C4C8CD" stroke-width="1.4" style="animation: om-stroke 9s linear infinite; animation-play-state: var(--anim, running);"></path>
+              <rect x="400" y="236" width="40" height="15" rx="3" fill="#F8F7F5" stroke="#C4C8CD" stroke-width="1.4" style="animation: om-stroke 9s linear infinite; animation-play-state: var(--anim, running);"></rect>
+              <g style="fill-opacity: 0; animation: om-fill5 9s linear infinite; animation-play-state: var(--anim, running);">
+                <path d="M400 236V146c0-8 3-12 8-14l24-1c5 2 8 6 8 14v90z" fill="#F2F1EE"></path>
+                <rect x="404" y="158" width="32" height="56" fill="#0B7386"></rect>
+                <rect x="404" y="176" width="32" height="6" fill="#63C8DC"></rect>
+                <rect x="400" y="236" width="40" height="15" rx="3" fill="#2E3033"></rect>
+              </g>
+            </g>
+
+            <!-- wide jar with lid -->
+            <g>
+              <rect x="452" y="180" width="80" height="70" rx="7" fill="#F8F7F5" stroke="#C4C8CD" stroke-width="1.4" style="animation: om-stroke 9s linear infinite; animation-play-state: var(--anim, running);"></rect>
+              <rect x="456" y="162" width="72" height="19" rx="4" fill="#F8F7F5" stroke="#C4C8CD" stroke-width="1.4" style="animation: om-stroke 9s linear infinite; animation-play-state: var(--anim, running);"></rect>
+              <g style="fill-opacity: 0; animation: om-fill6 9s linear infinite; animation-play-state: var(--anim, running);">
+                <rect x="452" y="180" width="80" height="70" rx="7" fill="#F2F1EE"></rect>
+                <rect x="452" y="198" width="80" height="34" fill="#0B7386"></rect>
+                <rect x="466" y="208" width="52" height="6" rx="3" fill="#F8F7F5"></rect>
+                <rect x="456" y="162" width="72" height="19" rx="4" fill="#B4452F"></rect>
+              </g>
+            </g>
+
+            <!-- flat sachet, front -->
+            <g>
+              <rect x="196" y="232" width="140" height="42" rx="4" fill="#F8F7F5" stroke="#C4C8CD" stroke-width="1.4" style="animation: om-stroke 9s linear infinite; animation-play-state: var(--anim, running);"></rect>
+              <g style="fill-opacity: 0; animation: om-fill7 9s linear infinite; animation-play-state: var(--anim, running);">
+                <rect x="196" y="232" width="140" height="42" rx="4" fill="#2E3033"></rect>
+                <rect x="196" y="232" width="140" height="9" fill="#0B7386"></rect>
+                <rect x="210" y="252" width="60" height="6" rx="3" fill="#63C8DC"></rect>
+              </g>
+            </g>
+
+            <!-- stick pack, front -->
+            <g>
+              <rect x="148" y="196" width="26" height="78" rx="3" fill="#F8F7F5" stroke="#C4C8CD" stroke-width="1.4" style="animation: om-stroke 9s linear infinite; animation-play-state: var(--anim, running);"></rect>
+              <g style="fill-opacity: 0; animation: om-fill8 9s linear infinite; animation-play-state: var(--anim, running);">
+                <rect x="148" y="196" width="26" height="78" rx="3" fill="#0B7386"></rect>
+                <rect x="148" y="214" width="26" height="20" fill="#F8F7F5"></rect>
+              </g>
+            </g>
+    </svg>
+          </div>
+        </div>
+        <div  data-r="g" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--rule, #DADEE2); border: 1px solid var(--rule, #DADEE2);">
+        <sc-for list="{{ homeServices }}" as="s" hint-placeholder-count="6">
+          <div onClick="{{ goServices }}" style="background: var(--paper, #F8F7F5); padding: 30px 26px 34px; display: flex; flex-direction: column; gap: 12px; min-height: 210px; cursor: pointer;" style-hover="background: var(--paper-2, #F2F1EE);">
+            <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; color: var(--ink-soft, #6E747B);">{{ s.num }}</span>
+            <h3 style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; line-height: 1.1; letter-spacing: 0; color: var(--ink, #2E3033);">{{ s.title }}</h3>
+            <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; line-height: 1.55; color: var(--text, #3E4247);">{{ s.body }}</p>
+          </div>
+        </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 78px 40px;">
+      <div  data-r="g" style="background: var(--ink, #2E3033); color: var(--paper, #F8F7F5); display: grid; grid-template-columns: 1.42fr 0.58fr;">
+        <div  data-r="h" style="padding: 56px 52px; display: flex; flex-direction: column; gap: 22px; min-height: 340px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+            <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mist, #B8BCC2);">Why us</span>
+            <div style="display: flex; gap: 8px;">
+              <div onClick="{{ whyPrev }}" style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid var(--ink-line, #4A4D52); border-radius: 50%; cursor: pointer;" style-hover="background: var(--ink-line, #4A4D52);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--paper, #F8F7F5)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m14 6-6 6 6 6"></path></svg>
+              </div>
+              <div onClick="{{ whyNext }}" style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid var(--ink-line, #4A4D52); border-radius: 50%; cursor: pointer;" style-hover="background: var(--ink-line, #4A4D52);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--paper, #F8F7F5)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 6 6 6-6 6"></path></svg>
+              </div>
+            </div>
+          </div>
+          <span style="display: block; width: 48px; height: 3px; background: var(--accent-soft, #63C8DC);"></span>
+          <h2 data-r="whyh" style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; line-height: 1.3; letter-spacing: -0.03em; max-width: 640px; color: var(--paper, #F8F7F5);">{{ whyHeading }}</h2>
+          <p data-r="whyb" style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 21px; line-height: 1.55; color: var(--ink-tint, #DCDFE3); max-width: 640px;">{{ whyBody }}</p>
+          <div onClick="{{ goAbout }}" style="align-self: flex-start; margin-top: auto; display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; box-sizing: border-box; border-radius: 6px; white-space: nowrap; cursor: pointer; transition: transform 140ms ease, background 140ms ease, color 140ms ease; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: 600; font-size: 17px; color: var(--accent, #0B7386); background: var(--paper, #F8F7F5);" style-hover="background: var(--accent, #0B7386); color: var(--paper, #F8F7F5); transform: translateY(-1px);">About Olympus</div>
+          <div style="display: flex; gap: 7px;">
+            <sc-for list="{{ whyDots }}" as="d" hint-placeholder-count="5">
+              <div onClick="{{ d.pick }}" style="width: 24px; height: 3px; border-radius: var(--pill, 6px); background: {{ d.color }}; cursor: pointer;"></div>
+            </sc-for>
+          </div>
+        </div>
+        <div  data-r="h" style="border-left: 1px solid var(--ink-line, #4A4D52); padding: 48px 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; position: relative; min-height: 340px;">
+          <div style="position: relative; width: 238px; height: 188px;">
+            <div style="position: absolute; inset: 0; opacity: {{ animTeam }}; transition: opacity 450ms ease;">
+              <svg width="238" height="188" viewBox="0 0 190 150" fill="none">
+                <rect x="14" y="30" width="70" height="90" rx="4" stroke="var(--paper, #F8F7F5)" stroke-width="1.5" opacity="0.45"></rect>
+                <rect x="106" y="30" width="70" height="90" rx="4" stroke="var(--paper, #F8F7F5)" stroke-width="1.5" opacity="0.45"></rect>
+                <circle cx="49" cy="60" r="9" stroke="var(--paper, #F8F7F5)" stroke-width="2"></circle>
+                <path d="M35 88c0-8 6-14 14-14s14 6 14 14" stroke="var(--paper, #F8F7F5)" stroke-width="2" stroke-linecap="round"></path>
+                <circle cx="141" cy="60" r="9" stroke="var(--paper, #F8F7F5)" stroke-width="2"></circle>
+                <path d="M127 88c0-8 6-14 14-14s14 6 14 14" stroke="var(--paper, #F8F7F5)" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M84 66h22" stroke="var(--paper, #F8F7F5)" stroke-width="1.6" stroke-dasharray="5 6" style="animation: om-dash 1.4s linear infinite; animation-play-state: var(--anim, running);"></path>
+                <path d="M106 84H84" stroke="var(--paper, #F8F7F5)" stroke-width="1.6" stroke-dasharray="5 6" style="animation: om-dash 1.4s linear infinite reverse; animation-play-state: var(--anim, running);"></path>
+                <circle cx="95" cy="75" r="4" fill="var(--mark-soft, #D9634A)" style="animation: om-pulse 2s ease-in-out infinite; animation-play-state: var(--anim, running);"></circle>
+              </svg>
+            </div>
+            <div style="position: absolute; inset: 0; opacity: {{ animScale }}; transition: opacity 450ms ease;">
+              <svg width="238" height="188" viewBox="0 0 190 150" fill="none">
+                <line x1="16" y1="130" x2="174" y2="130" stroke="var(--paper, #F8F7F5)" stroke-width="1.5" opacity="0.5"></line>
+                <rect x="30" y="60" width="22" height="68" fill="var(--paper, #F8F7F5)" style="transform-origin: 50% 100%; animation: om-grow 2.4s ease-in-out infinite; animation-play-state: var(--anim, running);"></rect>
+                <rect x="66" y="40" width="22" height="88" fill="var(--paper, #F8F7F5)" style="transform-origin: 50% 100%; animation: om-grow 2.4s ease-in-out infinite 0.25s; animation-play-state: var(--anim, running);"></rect>
+                <rect x="102" y="24" width="22" height="104" fill="var(--paper, #F8F7F5)" style="transform-origin: 50% 100%; animation: om-grow 2.4s ease-in-out infinite 0.5s; animation-play-state: var(--anim, running);"></rect>
+                <rect x="138" y="12" width="22" height="116" fill="var(--paper, #F8F7F5)" style="transform-origin: 50% 100%; animation: om-grow 2.4s ease-in-out infinite 0.75s; animation-play-state: var(--anim, running);"></rect>
+              </svg>
+            </div>
+            <div style="position: absolute; inset: 0; opacity: {{ animRft }}; transition: opacity 450ms ease;">
+              <svg width="238" height="188" viewBox="0 0 190 150" fill="none">
+                <circle cx="95" cy="75" r="58" stroke="var(--paper, #F8F7F5)" stroke-width="1.5" opacity="0.35"></circle>
+                <circle cx="95" cy="75" r="58" stroke="var(--paper, #F8F7F5)" stroke-width="2" stroke-dasharray="14 14" style="transform-origin: 95px 75px; animation: om-spin 9s linear infinite; animation-play-state: var(--anim, running);"></circle>
+                <circle cx="95" cy="75" r="34" stroke="var(--paper, #F8F7F5)" stroke-width="1.5" opacity="0.45"></circle>
+                <path d="m78 76 12 12 23-25" stroke="var(--mark-soft, #D9634A)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="60" style="animation: om-draw 2.6s ease-in-out infinite; animation-play-state: var(--anim, running);"></path>
+              </svg>
+            </div>
+            <div style="position: absolute; inset: 0; opacity: {{ animGlobal }}; transition: opacity 450ms ease;">
+              <svg width="238" height="188" viewBox="0 0 190 150" fill="none">
+                <circle cx="95" cy="75" r="46" stroke="var(--paper, #F8F7F5)" stroke-width="1.5" opacity="0.6"></circle>
+                <ellipse cx="95" cy="75" rx="46" ry="18" stroke="var(--paper, #F8F7F5)" stroke-width="1.2" opacity="0.4"></ellipse>
+                <ellipse cx="95" cy="75" rx="18" ry="46" stroke="var(--paper, #F8F7F5)" stroke-width="1.2" opacity="0.4"></ellipse>
+                <g style="transform-origin: 95px 75px; animation: om-spin 12s linear infinite; animation-play-state: var(--anim, running);">
+                  <circle cx="95" cy="14" r="4" fill="var(--paper, #F8F7F5)"></circle>
+                  <circle cx="156" cy="75" r="4" fill="var(--paper, #F8F7F5)"></circle>
+                  <circle cx="95" cy="136" r="4" fill="var(--paper, #F8F7F5)"></circle>
+                  <circle cx="34" cy="75" r="4" fill="var(--paper, #F8F7F5)"></circle>
+                </g>
+                <circle cx="95" cy="75" r="61" stroke="var(--paper, #F8F7F5)" stroke-width="1" stroke-dasharray="4 10" opacity="0.5" style="transform-origin: 95px 75px; animation: om-spin-rev 16s linear infinite; animation-play-state: var(--anim, running);"></circle>
+              </svg>
+            </div>
+            <div style="position: absolute; inset: 0; opacity: {{ animAuto }}; transition: opacity 450ms ease;">
+              <svg width="238" height="188" viewBox="0 0 190 150" fill="none">
+                <g style="transform-origin: 95px 75px; animation: om-spin 8s linear infinite; animation-play-state: var(--anim, running);">
+                  <circle cx="95" cy="75" r="30" stroke="var(--paper, #F8F7F5)" stroke-width="2"></circle>
+                  <circle cx="95" cy="75" r="12" stroke="var(--paper, #F8F7F5)" stroke-width="2" opacity="0.7"></circle>
+                  <path d="M95 39v-12M95 111v12M131 75h12M47 75H35M120 50l9-9M70 100l-9 9M120 100l9 9M70 50l-9-9" stroke="var(--paper, #F8F7F5)" stroke-width="2" stroke-linecap="round"></path>
+                </g>
+                <path d="M12 26h34M144 26h34M12 124h34M144 124h34" stroke="var(--paper, #F8F7F5)" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.6" style="animation: om-dash 1.6s linear infinite; animation-play-state: var(--anim, running);"></path>
+                <circle cx="18" cy="75" r="3" fill="var(--mark-soft, #D9634A)" style="animation: om-pulse 2s ease-in-out infinite; animation-play-state: var(--anim, running);"></circle>
+                <circle cx="172" cy="75" r="3" fill="var(--mark-soft, #D9634A)" style="animation: om-pulse 2s ease-in-out infinite 1s; animation-play-state: var(--anim, running);"></circle>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: 0 0 84px;">
+      <div  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px; display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 26px;">
+        <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; letter-spacing: -0.03em; color: var(--ink, #2E3033);">Selected work</h2>
+        <div onClick="{{ goPortfolio }}" style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; color: var(--accent, #0B7386); cursor: pointer;" style-hover="color: var(--ink, #2E3033);">View our portfolio &rarr;</div>
+      </div>
+      <div  data-r="g" style="display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 2px; background: var(--rule, #DADEE2); border-top: 1px solid var(--rule, #DADEE2); border-bottom: 1px solid var(--rule, #DADEE2);">
+        <div  data-r="h work" style="height: 320px; min-width: 0;"><image-slot id="home-work-1" shape="rect" placeholder="Carton / folding box"></image-slot></div>
+        <div  data-r="h work" style="height: 320px; min-width: 0;"><image-slot id="home-work-2" shape="rect" placeholder="Bottle CGI render"></image-slot></div>
+        <div  data-r="h work" style="height: 320px; min-width: 0;"><image-slot id="home-work-3" shape="rect" placeholder="Flexible pouch"></image-slot></div>
+        <div  data-r="h work" style="height: 320px; min-width: 0;"><image-slot id="home-work-4" shape="rect" placeholder="In-store display"></image-slot></div>
+      </div>
+    </section>
+
+    <section data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px 84px;">
+      <div data-r="g" style="display: grid; grid-template-columns: minmax(0,0.85fr) minmax(0,1.15fr); gap: 56px; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <span style="display: block; width: 48px; height: 3px; background: var(--accent, #0B7386);"></span>
+          <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; line-height: 1.1; letter-spacing: -0.03em; color: var(--ink, #2E3033);">Who we work for</h2>
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247); max-width: 380px;">Most of our work sits under NDA, so we report it by category rather than by name. Named references are available on request.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 26px;">
+          <div data-r="g" style="display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1px; background: var(--rule, #DADEE2); border: 1px solid var(--rule, #DADEE2);">
+            <sc-for list="{{ clientProof }}" as="c" hint-placeholder-count="3">
+              <div style="background: var(--paper, #F8F7F5); padding: 26px 24px 28px; display: flex; flex-direction: column; gap: 8px;">
+                <span style="font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; line-height: 1; letter-spacing: -0.03em; color: var(--ink, #2E3033);">{{ c.f }}</span>
+                <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ c.l }}</span>
+              </div>
+            </sc-for>
+          </div>
+          <div data-r="g" style="display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 1px; background: var(--rule, #DADEE2); border: 1px solid var(--rule, #DADEE2);">
+            <div style="background: var(--paper, #F8F7F5); height: 92px;"><image-slot id="client-logo-1" shape="rect" placeholder="Client logo (cleared)"></image-slot></div>
+            <div style="background: var(--paper, #F8F7F5); height: 92px;"><image-slot id="client-logo-2" shape="rect" placeholder="Client logo (cleared)"></image-slot></div>
+            <div style="background: var(--paper, #F8F7F5); height: 92px;"><image-slot id="client-logo-3" shape="rect" placeholder="Client logo (cleared)"></image-slot></div>
+            <div style="background: var(--paper, #F8F7F5); height: 92px;"><image-slot id="client-logo-4" shape="rect" placeholder="Client logo (cleared)"></image-slot></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: var(--ink, #2E3033);">
+      <div  data-r="g p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: minmax(0,0.9fr) minmax(0,1.1fr); gap: 40px; align-items: center;">
+        <div style="padding: 64px 0; display: flex; flex-direction: column; gap: 22px;">
+          <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; line-height: 1.1; letter-spacing: -0.03em; color: var(--paper, #F8F7F5); max-width: 440px;">Ready to reduce your artwork costs by <span style="color: var(--accent-soft, #63C8DC); white-space: nowrap;">30% ?</span></h2>
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--ink-tint, #DCDFE3); max-width: 420px;">Let us review your current workflow. We guarantee savings and faster turnarounds with our proven offshore model.</p>
+          <a href="https://calendly.com/olympuspkg/" target="_blank" style="align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; box-sizing: border-box; border-radius: 6px; white-space: nowrap; cursor: pointer; transition: transform 140ms ease, background 140ms ease, color 140ms ease; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: 600; font-size: 17px; color: var(--accent, #0B7386); background: var(--paper, #F8F7F5);" style-hover="background: var(--accent, #0B7386); color: var(--paper, #F8F7F5); transform: translateY(-1px);">Request a Free Quote <span style="font-size: 15px;">&#8599;</span></a>
+          <div  data-r="g" style="display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 24px; padding-top: 12px; max-width: 460px;">
+            <sc-for list="{{ assurances }}" as="a" hint-placeholder-count="3">
+              <div style="display: flex; align-items: center; gap: 9px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#63C8DC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="flex: none; stroke: var(--accent-soft, #63C8DC);"><path d="{{ a.icon }}"></path></svg>
+                <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; line-height: 1.3; color: var(--ink-mist, #B8BCC2);">{{ a.label }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="min-width: 0; padding: 24px 0;">
+          <iframe src="{{ mapSrc }}" title="Global delivery" style="width: 100%; height: 400px; border: 0; display: block;"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  </sc-if>
+
+  <!-- ===================== SERVICES ===================== -->
+  <sc-if value="{{ isServices }}" hint-placeholder-val="{{ false }}">
+  <main>
+    <section  data-r="g p" style="max-width: 1240px; margin: 0 auto; padding: 76px 40px 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end;">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <div style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent, #0B7386);">Services</div>
+        <h1 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 52px; line-height: 1.1; letter-spacing: -0.035em; color: var(--ink, #2E3033);">From die-line to plate-ready</h1>
+      </div>
+      <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 21px; line-height: 1.55; color: var(--text, #3E4247);">Our scope of services starts right after the idea is sketched by the Creative Agencies and ends right before the Plate or Cylinder Production.</p>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px 84px;">
+      <div  data-r="g" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px;">
+        <sc-for list="{{ serviceLinks }}" as="s" hint-placeholder-count="7">
+          <div onClick="{{ s.open }}" style="background: var(--paper, #F8F7F5); box-shadow: 0 0 0 1px var(--rule, #DADEE2); padding: 32px 30px 34px; display: flex; flex-direction: column; gap: 14px; min-height: 320px; cursor: pointer;" style-hover="background: var(--paper-2, #F2F1EE);">
+            <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px;">
+              <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; color: var(--ink-soft, #6E747B);">{{ s.num }}</span>
+              <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft, #6E747B);">{{ s.tag }}</span>
+            </div>
+            <span style="display: block; width: 48px; height: 3px; background: var(--accent, #0B7386);"></span>
+            <h3 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 28px; line-height: 1.1; letter-spacing: 0; color: var(--ink, #2E3033); text-wrap: pretty;">{{ s.title }}</h3>
+            <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ s.lead }}</p>
+            <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 16px; color: var(--accent, #0B7386); margin-top: auto; padding-top: 16px;">Explore &rarr;</span>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px 88px;">
+      <div  data-r="g" style="background: var(--ink, #2E3033); display: grid; grid-template-columns: minmax(0,1.2fr) minmax(0,0.8fr); align-items: center; gap: 48px; padding: 52px;">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mist, #B8BCC2);">Standards &amp; Security</span>
+          <span style="display: block; width: 48px; height: 3px; background: var(--accent-soft, #63C8DC);"></span>
+          <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; line-height: 1.1; letter-spacing: -0.03em; color: var(--paper, #F8F7F5); max-width: 560px; text-wrap: pretty;">Seven services, one set of controls behind them</h2>
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--ink-tint, #DCDFE3); max-width: 560px;">The colour standards we hold, the equipment that holds them, the five checks every file passes and the technology it runs on. Read what sits underneath the work before you commission any of it.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 18px;">
+          <div style="display: flex; flex-direction: column;">
+            <sc-for list="{{ standardsTeasers }}" as="t" hint-placeholder-count="3">
+              <div style="display: flex; align-items: baseline; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--ink-line, #4A4D52);">
+                <span style="flex: none; width: 6px; height: 6px; background: var(--accent-soft, #63C8DC); margin-top: 8px;"></span>
+                <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--ink-tint, #DCDFE3);">{{ t }}</span>
+              </div>
+            </sc-for>
+          </div>
+          <div onClick="{{ goStandards }}" style="align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; box-sizing: border-box; border-radius: 6px; white-space: nowrap; cursor: pointer; transition: transform 140ms ease, background 140ms ease, color 140ms ease; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: 600; font-size: 17px; color: var(--accent, #0B7386); background: var(--paper, #F8F7F5);" style-hover="background: var(--accent, #0B7386); color: var(--paper, #F8F7F5); transform: translateY(-1px);">See our standards &rarr;</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  </sc-if>
+
+  <!-- ===================== SERVICE DETAIL ===================== -->
+  <sc-if value="{{ isService }}" hint-placeholder-val="{{ false }}">
+  <main>
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 40px 40px 0;">
+      <div onClick="{{ goServiceList }}" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; color: var(--text-soft, #6E747B); cursor: pointer;" style-hover="color: var(--ink, #2E3033);">&larr; All services</div>
+    </section>
+
+    <section  data-r="g p" style="max-width: 1240px; margin: 0 auto; padding: 28px 40px 56px; display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,0.95fr); gap: 60px; align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: 22px;">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; color: var(--ink-soft, #6E747B);">{{ serviceDetail.num }}</span>
+          <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent, #0B7386);">{{ serviceDetail.tag }}</span>
+        </div>
+        <h1 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 52px; line-height: 1.1; letter-spacing: -0.035em; color: var(--ink, #2E3033);">{{ serviceDetail.title }}</h1>
+        <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 21px; line-height: 1.55; color: var(--text, #3E4247); max-width: 520px;">{{ serviceDetail.lead }}</p>
+        <div onClick="{{ goContact }}" style="align-self: flex-start; margin-top: 26px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; box-sizing: border-box; border-radius: 6px; white-space: nowrap; cursor: pointer; transition: transform 140ms ease, background 140ms ease, color 140ms ease; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: 600; font-size: 17px; color: var(--paper, #F8F7F5); background: var(--ink, #2E3033);" style-hover="background: var(--accent, #0B7386); transform: translateY(-1px);">{{ serviceDetail.cta }}</div>
+      </div>
+      <div  data-r="h" style="position: relative; height: 480px; min-width: 0;">
+        <sc-for list="{{ serviceSlides }}" as="s" hint-placeholder-count="3">
+          <div style="position: absolute; inset: 0; opacity: {{ s.opacity }}; transition: opacity 500ms ease; pointer-events: {{ s.events }};">
+            <image-slot id="{{ s.id }}" shape="rounded" radius="3" placeholder="{{ s.hint }}"></image-slot>
+          </div>
+        </sc-for>
+        <div style="position: absolute; bottom: 14px; right: 14px; display: flex; gap: 7px; z-index: 2;">
+          <sc-for list="{{ serviceSlides }}" as="s" hint-placeholder-count="3">
+            <div onClick="{{ s.pick }}" style="width: 24px; height: 4px; border-radius: var(--pill, 6px); background: {{ s.dot }}; cursor: pointer;"></div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section  data-r="g p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px 64px; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 60px;">
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent, #0B7386);">The Challenge</span>
+        <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ serviceDetail.challenge }}</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent, #0B7386);">The Solution</span>
+        <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ serviceDetail.solution }}</p>
+      </div>
+    </section>
+
+    <section style="background: var(--ink, #2E3033);">
+      <div  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 56px 40px;">
+        <h2 style="margin: 0 0 26px; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; letter-spacing: -0.03em; color: var(--paper, #F8F7F5);">Our Capabilities</h2>
+        <div  data-r="g" style="display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1px; background: var(--ink-line, #4A4D52); border: 1px solid var(--ink-line, #4A4D52);">
+          <sc-for list="{{ serviceDetail.capabilities }}" as="c" hint-placeholder-count="4">
+            <div style="background: var(--ink, #2E3033); padding: 26px 28px 30px; display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; align-items: baseline; gap: 11px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#63C8DC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; stroke: var(--accent-soft, #63C8DC);"><path d="m5 12.5 4.5 4.5L19 7"></path></svg>
+                <h3 style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; letter-spacing: 0; color: var(--paper, #F8F7F5);">{{ c.t }}</h3>
+              </div>
+              <p style="margin: 0 0 0 27px; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--ink-tint, #DCDFE3);">{{ c.b }}</p>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 64px 40px 0;">
+      <h2 style="margin: 0 0 24px; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; letter-spacing: -0.03em; color: var(--ink, #2E3033);">Who This Is For</h2>
+      <div  data-r="g" style="display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px;">
+        <sc-for list="{{ serviceDetail.audience }}" as="a" hint-placeholder-count="2">
+          <div style="background: var(--paper, #F8F7F5); border: 1px solid var(--rule, #DADEE2); padding: 28px 30px 32px; display: flex; flex-direction: column; gap: 8px;">
+            <h3 style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; letter-spacing: 0; color: var(--ink, #2E3033);">{{ a.t }}</h3>
+            <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ a.b }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 24px 40px 0;">
+      <div style="background: var(--rule, #DADEE2); padding: 44px 48px; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 28px; letter-spacing: -0.015em; color: var(--ink, #2E3033);">{{ serviceDetail.cta }}</h2>
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--text, #3E4247); max-width: 560px;">We review a live set of your artwork and report back on accuracy, turnaround and where cost sits.</p>
+        </div>
+        <a href="https://calendly.com/olympuspkg/" target="_blank" style="align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; box-sizing: border-box; border-radius: 6px; white-space: nowrap; cursor: pointer; transition: transform 140ms ease, background 140ms ease, color 140ms ease; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: 600; font-size: 17px; color: var(--paper, #F8F7F5); background: var(--accent, #0B7386);" style-hover="background: var(--ink, #2E3033); transform: translateY(-1px);">Book a Packaging Graphics Audit</a>
+      </div>
+    </section>
+
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 56px 40px 88px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;">
+      <div onClick="{{ servicePrev }}" style="display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 22px; box-sizing: border-box; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 16px; color: var(--ink, #2E3033); border: 1px solid var(--rule-strong, #C4C8CD); border-radius: 6px; white-space: nowrap; cursor: pointer; transition: border-color 140ms ease;" style-hover="border-color: var(--ink, #2E3033);">&larr; Previous service</div>
+      <div onClick="{{ goServiceList }}" style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; color: var(--text-soft, #6E747B); cursor: pointer;" style-hover="color: var(--ink, #2E3033);">All services</div>
+      <div onClick="{{ serviceNext }}" style="display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 22px; box-sizing: border-box; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 16px; color: var(--ink, #2E3033); border: 1px solid var(--rule-strong, #C4C8CD); border-radius: 6px; white-space: nowrap; cursor: pointer; transition: border-color 140ms ease;" style-hover="border-color: var(--ink, #2E3033);">Next service &rarr;</div>
+    </section>
+  </main>
+  </sc-if>
+
+  <!-- ===================== PORTFOLIO ===================== -->
+  <sc-if value="{{ isPortfolio }}" hint-placeholder-val="{{ false }}">
+  <main>
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 76px 40px 40px; display: flex; flex-direction: column; gap: 20px;">
+      <div style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent, #0B7386);">Portfolio</div>
+      <h1 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 52px; line-height: 1.1; letter-spacing: -0.035em; color: var(--ink, #2E3033); max-width: 700px;">Work for brands and agencies in four continents</h1>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap; padding-top: 6px;">
+        <sc-for list="{{ categories }}" as="c" hint-placeholder-count="6">
+          <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; color: var(--ink, #2E3033); border: 1px solid var(--rule-strong, #C4C8CD); padding: 8px 15px; border-radius: var(--pill, 6px);" style-hover="border-color: var(--accent, #0B7386); color: var(--accent, #0B7386);">{{ c }}</span>
+        </sc-for>
+      </div>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px 84px;">
+      <div  data-r="g" style="display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: 16px;">
+        <sc-for list="{{ portfolioTiles }}" as="t" hint-placeholder-count="10">
+          <div  data-r="h" style="grid-column: span {{ t.span }}; height: {{ t.h }}; min-width: 0;"><image-slot id="{{ t.id }}" shape="rounded" radius="3" placeholder="{{ t.hint }}"></image-slot></div>
+        </sc-for>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding-top: 34px;">
+        <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; color: var(--text-soft, #6E747B);">{{ pfRange }}</span>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <div onClick="{{ pfPrev }}" style="display: flex; align-items: center; gap: 8px; font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; color: {{ pfPrevColor }}; border: 1px solid var(--rule, #DADEE2); padding: 10px 18px; border-radius: var(--pill, 6px); cursor: {{ pfPrevCursor }};" style-hover="border-color: var(--ink, #2E3033);">&larr; Previous</div>
+          <sc-for list="{{ pfPages }}" as="pg" hint-placeholder-count="3">
+            <div onClick="{{ pg.go }}" style="min-width: 40px; text-align: center; font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; color: {{ pg.color }}; background: {{ pg.bg }}; border: 1px solid {{ pg.border }}; padding: 10px 12px; border-radius: var(--pill, 6px); cursor: pointer;" style-hover="border-color: var(--ink, #2E3033);">{{ pg.label }}</div>
+          </sc-for>
+          <div onClick="{{ pfNext }}" style="display: flex; align-items: center; gap: 8px; font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; color: {{ pfNextColor }}; border: 1px solid var(--rule, #DADEE2); padding: 10px 18px; border-radius: var(--pill, 6px); cursor: {{ pfNextCursor }};" style-hover="border-color: var(--ink, #2E3033);">Next &rarr;</div>
+        </div>
+      </div>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px 88px;">
+      <div style="background: var(--rule, #DADEE2); padding: 44px 48px; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 28px; letter-spacing: -0.015em; color: var(--ink, #2E3033);">See what it would look like on your range</h2>
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--text, #3E4247); max-width: 560px;">We audit a live set of artwork and report back on accuracy, turnaround and where cost sits.</p>
+        </div>
+        <a href="https://calendly.com/olympuspkg/" target="_blank" style="align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; box-sizing: border-box; border-radius: 6px; white-space: nowrap; cursor: pointer; transition: transform 140ms ease, background 140ms ease, color 140ms ease; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: 600; font-size: 17px; color: var(--paper, #F8F7F5); background: var(--accent, #0B7386);" style-hover="background: var(--ink, #2E3033); transform: translateY(-1px);">Book a Packaging Graphics Audit</a>
+      </div>
+    </section>
+  </main>
+  </sc-if>
+
+  <!-- ===================== CASE DETAIL ===================== -->
+  <sc-if value="{{ isCase }}" hint-placeholder-val="{{ false }}">
+  <main>
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 40px 40px 0;">
+      <div onClick="{{ goCases }}" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; color: var(--text-soft, #6E747B); cursor: pointer;" style-hover="color: var(--ink, #2E3033);">&larr; All case studies</div>
+    </section>
+
+    <section  data-r="g p" style="max-width: 1240px; margin: 0 auto; padding: 28px 40px 40px; display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,0.95fr); gap: 60px; align-items: end;">
+      <div style="display: flex; flex-direction: column; gap: 22px;">
+        <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent, #0B7386);">{{ caseDetail.tag }}</span>
+        <h1 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 52px; line-height: 1.1; letter-spacing: -0.035em; color: var(--ink, #2E3033);">{{ caseDetail.title }}</h1>
+      </div>
+      <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 21px; line-height: 1.55; color: var(--text, #3E4247);">{{ caseDetail.body }}</p>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px 56px;">
+      <div  data-r="h" style="height: 560px; min-width: 0;"><image-slot id="{{ caseDetail.slot }}" shape="rounded" radius="3" placeholder="{{ caseDetail.slotHint }}"></image-slot></div>
+    </section>
+
+    <section style="background: var(--ink, #2E3033); padding: 44px 0;">
+      <div  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px;">
+      <div  data-r="g neg" style="display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1px; background: var(--ink-line, #4A4D52); margin-left: -32px;">
+        <sc-for list="{{ caseDetail.stats }}" as="s" hint-placeholder-count="3">
+          <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px; box-sizing: border-box; width: 100%; padding: 20px 32px; background: var(--ink, #2E3033);">
+            <span style="display: block; width: 48px; height: 3px; background: var(--accent-soft, #63C8DC);"></span>
+            <span style="font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; line-height: 1; letter-spacing: -0.03em; color: var(--paper, #F8F7F5);">{{ s.figure }}</span>
+            <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; color: var(--ink-mist, #B8BCC2);">{{ s.label }}</span>
+          </div>
+        </sc-for>
+      </div>
+      </div>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 64px 40px 0;">
+      <div style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent, #0B7386); margin-bottom: 20px;">Client profile</div>
+      <div  data-r="g" style="display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1px; background: var(--rule, #DADEE2); border: 1px solid var(--rule, #DADEE2);">
+        <sc-for list="{{ caseDetail.profile }}" as="r" hint-placeholder-count="3">
+          <div style="background: var(--paper, #F8F7F5); padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-soft, #6E747B);">{{ r.k }}</span>
+            <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; line-height: 1.3; color: var(--ink, #2E3033); text-wrap: pretty;">{{ r.v }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section  data-r="g p" style="max-width: 1240px; margin: 0 auto; padding: 64px 40px 0; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 60px;">
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent, #0B7386);">The challenge</span>
+        <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ caseDetail.challenge }}</p>
+        <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent, #0B7386); margin-top: 22px;">The result</span>
+        <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ caseDetail.result }}</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent, #0B7386);">What we did</span>
+        <div style="display: flex; flex-direction: column;">
+          <sc-for list="{{ caseDetail.approach }}" as="a" hint-placeholder-count="4">
+            <div style="display: flex; align-items: flex-start; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--rule, #DADEE2);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0B7386" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 4px; stroke: var(--accent, #0B7386);"><path d="m5 12.5 4.5 4.5L19 7"></path></svg>
+              <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ a }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section  data-r="g p" style="max-width: 1240px; margin: 0 auto; padding: 76px 40px 0; display: grid; grid-template-columns: minmax(0,4fr) minmax(0,8fr); gap: 48px; align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <span style="display: block; width: 48px; height: 3px; background: var(--accent, #0B7386);"></span>
+        <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; line-height: 1.1; letter-spacing: -0.03em; color: var(--ink, #2E3033);">Where it started</h2>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px;">
+        <sc-for list="{{ caseDetail.background }}" as="b" hint-placeholder-count="3">
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247); text-wrap: pretty;">{{ b }}</p>
+        </sc-for>
+      </div>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 64px 40px 0;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid var(--rule, #DADEE2);">
+        <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 28px; letter-spacing: -0.015em; color: var(--ink, #2E3033);">How the programme ran</h2>
+        <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; color: var(--text-soft, #6E747B);">{{ caseDetail.duration }}</span>
+      </div>
+      <div  data-r="g" style="display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1px; background: var(--rule, #DADEE2); border-bottom: 1px solid var(--rule, #DADEE2);">
+        <sc-for list="{{ caseDetail.phases }}" as="p" hint-placeholder-count="3">
+          <div style="background: var(--paper, #F8F7F5); padding: 28px 26px 32px; display: flex; flex-direction: column; gap: 10px; min-height: 230px;">
+            <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">
+              <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 12px; color: var(--accent, #0B7386);">{{ p.n }}</span>
+              <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; color: var(--ink-soft, #6E747B);">{{ p.d }}</span>
+            </div>
+            <h3 style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; line-height: 1.1; color: var(--ink, #2E3033);">{{ p.t }}</h3>
+            <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ p.b }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section style="background: var(--ink, #2E3033); margin-top: 76px;">
+      <div  data-r="g p" style="max-width: 1240px; margin: 0 auto; padding: 68px 40px; display: grid; grid-template-columns: minmax(0,4fr) minmax(0,8fr); gap: 48px; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <span style="display: block; width: 48px; height: 3px; background: var(--accent-soft, #63C8DC);"></span>
+          <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mist, #B8BCC2);">In their words</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 20px; max-width: 760px;">
+          <p style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; line-height: 1.3; letter-spacing: -0.03em; color: var(--paper, #F8F7F5); text-wrap: pretty;">&ldquo;{{ caseDetail.quote }}&rdquo;</p>
+          <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--ink-tint, #DCDFE3);">{{ caseDetail.quoteRole }}</span>
+        </div>
+      </div>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 76px 40px 0;">
+      <h2 style="margin: 0 0 24px; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; letter-spacing: -0.03em; color: var(--ink, #2E3033);">What changed in practice</h2>
+      <div  data-r="g" style="display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1px; background: var(--rule, #DADEE2); border: 1px solid var(--rule, #DADEE2);">
+        <sc-for list="{{ caseDetail.detail }}" as="d" hint-placeholder-count="4">
+          <div style="background: var(--paper, #F8F7F5); padding: 28px 26px 32px; display: flex; flex-direction: column; gap: 10px; min-height: 190px;">
+            <h3 style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; color: var(--ink, #2E3033);">{{ d.t }}</h3>
+            <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ d.b }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section  data-r="g p" style="max-width: 1240px; margin: 0 auto; padding: 64px 40px 0; display: grid; grid-template-columns: minmax(0,4fr) minmax(0,8fr); gap: 48px; align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <span style="display: block; width: 48px; height: 3px; background: var(--accent, #0B7386);"></span>
+        <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; line-height: 1.1; letter-spacing: -0.03em; color: var(--ink, #2E3033);">What we carry forward</h2>
+      </div>
+      <div style="display: flex; flex-direction: column;">
+        <sc-for list="{{ caseDetail.learnings }}" as="l" hint-placeholder-count="3">
+          <div style="display: flex; align-items: flex-start; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--rule, #DADEE2);">
+            <span style="flex: none; width: 6px; height: 6px; background: var(--mark, #B4452F); margin-top: 9px;"></span>
+            <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ l }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 64px 40px 0;">
+      <div  data-r="g" style="background: var(--ink, #2E3033); display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,0.85fr); align-items: center; gap: 48px; padding: 48px 52px;">
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mist, #B8BCC2);">Full case study</span>
+          <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; line-height: 1.1; letter-spacing: -0.03em; color: var(--paper, #F8F7F5); max-width: 520px; text-wrap: pretty;">{{ caseDetail.pdfTitle }}</h2>
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--ink-tint, #DCDFE3); max-width: 520px;">{{ caseDetail.pdfBlurb }}</p>
+          <div style="display: flex; gap: 22px; flex-wrap: wrap; padding-top: 6px;">
+            <sc-for list="{{ caseDetail.pdfFacts }}" as="p" hint-placeholder-count="3">
+              <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mist, #B8BCC2);">{{ p }}</span>
+            </sc-for>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <label style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mist, #B8BCC2);">Work email</label>
+          <input type="email" placeholder="you@company.com" style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--ink, #2E3033); background: var(--paper, #F8F7F5); border: none; padding: 15px 18px; outline: none; width: 100%; box-sizing: border-box;">
+          <a href="mailto:sales@olympus.co.in?subject=Full%20case%20study%20request" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; box-sizing: border-box; border-radius: 6px; white-space: nowrap; cursor: pointer; transition: transform 140ms ease, background 140ms ease, color 140ms ease; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: 600; font-size: 17px; color: var(--accent, #0B7386); background: var(--paper, #F8F7F5);" style-hover="background: var(--accent, #0B7386); color: var(--paper, #F8F7F5); transform: translateY(-1px);">Download Full PDF <span style="font-size: 15px;">&darr;</span></a>
+          <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; line-height: 1.55; color: var(--ink-soft, #6E747B);">Sent straight to your inbox. No newsletter, no follow-up sequence.</span>
+        </div>
+      </div>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 56px 40px 88px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;">
+      <div onClick="{{ casePrev }}" style="display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 22px; box-sizing: border-box; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 16px; color: var(--ink, #2E3033); border: 1px solid var(--rule-strong, #C4C8CD); border-radius: 6px; white-space: nowrap; cursor: pointer; transition: border-color 140ms ease;" style-hover="border-color: var(--ink, #2E3033);">&larr; Previous case study</div>
+      <div onClick="{{ caseNext }}" style="display: inline-flex; align-items: center; justify-content: center; height: 52px; padding: 0 22px; box-sizing: border-box; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 16px; color: var(--ink, #2E3033); border: 1px solid var(--rule-strong, #C4C8CD); border-radius: 6px; white-space: nowrap; cursor: pointer; transition: border-color 140ms ease;" style-hover="border-color: var(--ink, #2E3033);">Next case study &rarr;</div>
+    </section>
+  </main>
+  </sc-if>
+
+  <!-- ===================== STANDARDS ===================== -->
+  <sc-if value="{{ isStandards }}" hint-placeholder-val="{{ false }}">
+  <main>
+    <section data-r="p g" style="max-width: 1240px; margin: 0 auto; padding: 76px 40px 52px; display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,0.95fr); gap: 64px; align-items: end;">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <div style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent, #0B7386);">Standards &amp; Security</div>
+        <h1 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 52px; line-height: 1.1; letter-spacing: -0.035em; color: var(--ink, #2E3033);">What we work to, and how it is checked</h1>
+      </div>
+      <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 21px; line-height: 1.55; color: var(--text, #3E4247);">Brand guardianship is a set of controls, not a promise. This page sets out the colour standards we hold, the equipment that holds them, the checks every file passes, and how your artwork and data are protected while we have them.</p>
+    </section>
+
+    <section data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px 76px;">
+      <div data-r="g" style="display: grid; grid-template-columns: minmax(0,4fr) minmax(0,8fr); gap: 48px; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <span style="display: block; width: 48px; height: 3px; background: var(--accent, #0B7386);"></span>
+          <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; line-height: 1.1; letter-spacing: -0.03em; color: var(--ink, #2E3033);">Colour standards</h2>
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">One reference per brand, held centrally, used by every job that touches that brand.</p>
+          <svg viewBox="0 0 300 120" fill="none" style="margin-top: 26px; width: 100%; max-width: 320px; height: auto;">
+            <rect x="10" y="44" width="34" height="34" stroke="var(--rule-strong, #C4C8CD)" stroke-width="1.3"></rect>
+            <rect x="52" y="44" width="34" height="34" stroke="var(--rule-strong, #C4C8CD)" stroke-width="1.3"></rect>
+            <rect x="94" y="44" width="34" height="34" stroke="var(--rule-strong, #C4C8CD)" stroke-width="1.3"></rect>
+            <rect x="136" y="44" width="34" height="34" stroke="var(--rule-strong, #C4C8CD)" stroke-width="1.3"></rect>
+            <rect x="10" y="44" width="34" height="34" fill="var(--accent, #0B7386)" style="fill-opacity: 0; animation: om-sw1 6s linear infinite; animation-play-state: var(--anim, running);"></rect>
+            <rect x="52" y="44" width="34" height="34" fill="var(--ink, #2E3033)" style="fill-opacity: 0; animation: om-sw2 6s linear infinite; animation-play-state: var(--anim, running);"></rect>
+            <rect x="94" y="44" width="34" height="34" fill="var(--accent-soft, #63C8DC)" style="fill-opacity: 0; animation: om-sw3 6s linear infinite; animation-play-state: var(--anim, running);"></rect>
+            <rect x="136" y="44" width="34" height="34" fill="var(--mark, #B4452F)" style="fill-opacity: 0; animation: om-sw4 6s linear infinite; animation-play-state: var(--anim, running);"></rect>
+            <g style="animation: om-scan 6s ease-in-out infinite; animation-play-state: var(--anim, running);">
+              <rect x="12" y="20" width="30" height="14" rx="3" stroke="var(--ink, #2E3033)" stroke-width="1.3"></rect>
+              <path d="M27 34v10" stroke="var(--ink, #2E3033)" stroke-width="1.3"></path>
+            </g>
+            <path d="M10 92h160" stroke="var(--rule, #DADEE2)" stroke-width="1"></path>
+            <circle cx="238" cy="58" r="26" stroke="var(--rule-strong, #C4C8CD)" stroke-width="1.2"></circle>
+            <circle cx="238" cy="58" r="26" stroke="var(--accent, #0B7386)" stroke-width="1.4" stroke-dasharray="13 13" style="transform-origin: 238px 58px; animation: om-spin 9s linear infinite; animation-play-state: var(--anim, running);"></circle>
+            <circle cx="238" cy="58" r="13" stroke="var(--rule-strong, #C4C8CD)" stroke-width="1.2"></circle>
+            <circle cx="238" cy="58" r="4" fill="var(--mark, #B4452F)" style="animation: om-pulse 2.4s ease-in-out infinite; animation-play-state: var(--anim, running);"></circle>
+          </svg>
+        </div>
+        <div data-r="g" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--rule, #DADEE2); border: 1px solid var(--rule, #DADEE2);">
+          <sc-for list="{{ colourStandards }}" as="c" hint-placeholder-count="6">
+            <div style="background: var(--paper, #F8F7F5); padding: 28px 26px 32px; display: flex; flex-direction: column; gap: 10px; min-height: 180px;">
+              <h3 style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; color: var(--ink, #2E3033);">{{ c.t }}</h3>
+              <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ c.b }}</p>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: var(--ink, #2E3033);">
+      <div data-r="p g" style="max-width: 1240px; margin: 0 auto; padding: 68px 40px; display: grid; grid-template-columns: minmax(0,4fr) minmax(0,8fr); gap: 48px; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <span style="display: block; width: 48px; height: 3px; background: var(--accent-soft, #63C8DC);"></span>
+          <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; line-height: 1.1; letter-spacing: -0.03em; color: var(--paper, #F8F7F5);">Every file, the same five checks</h2>
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--ink-tint, #DCDFE3);">Automation does the repeatable checks. People do the judgement. Both are recorded.</p>
+          <svg viewBox="0 0 300 120" fill="none" style="margin-top: 26px; width: 100%; max-width: 320px; height: auto;">
+            <rect x="10" y="12" width="80" height="96" stroke="var(--ink-line, #4A4D52)" stroke-width="1.3"></rect>
+            <path d="M22 30h56M22 46h56M22 62h56M22 78h40M22 94h48" stroke="var(--ink-soft, #6E747B)" stroke-width="1.2" stroke-linecap="round"></path>
+            <g stroke="var(--accent-soft, #63C8DC)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m110 30 4 4 8-9" style="opacity: 0; animation: om-ck1 6s linear infinite; animation-play-state: var(--anim, running);"></path>
+              <path d="m110 46 4 4 8-9" style="opacity: 0; animation: om-ck2 6s linear infinite; animation-play-state: var(--anim, running);"></path>
+              <path d="m110 62 4 4 8-9" style="opacity: 0; animation: om-ck3 6s linear infinite; animation-play-state: var(--anim, running);"></path>
+              <path d="m110 78 4 4 8-9" style="opacity: 0; animation: om-ck4 6s linear infinite; animation-play-state: var(--anim, running);"></path>
+              <path d="m110 94 4 4 8-9" style="opacity: 0; animation: om-ck5 6s linear infinite; animation-play-state: var(--anim, running);"></path>
+            </g>
+            <path d="M136 30h150M136 46h124M136 62h150M136 78h104M136 94h136" stroke="var(--ink-line, #4A4D52)" stroke-width="1.2" stroke-linecap="round"></path>
+            <rect x="136" y="110" width="150" height="3" fill="var(--ink-line, #4A4D52)"></rect>
+            <rect x="136" y="110" width="150" height="3" fill="var(--accent-soft, #63C8DC)" style="transform-origin: 136px 110px; animation: om-bar 6s linear infinite; animation-play-state: var(--anim, running);"></rect>
+          </svg>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <sc-for list="{{ qcSteps }}" as="q" hint-placeholder-count="5">
+            <div data-r="g" style="display: grid; grid-template-columns: 56px minmax(0,0.8fr) minmax(0,1.4fr); gap: 24px; padding: 22px 0; border-bottom: 1px solid var(--ink-line, #4A4D52); align-items: baseline;">
+              <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 12px; color: var(--accent-soft, #63C8DC);">{{ q.n }}</span>
+              <h3 style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; color: var(--paper, #F8F7F5);">{{ q.t }}</h3>
+              <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--ink-tint, #DCDFE3);">{{ q.b }}</p>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+
+    <section data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 76px 40px 0;">
+      <div data-r="g" style="display: grid; grid-template-columns: minmax(0,4fr) minmax(0,8fr); gap: 48px; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <span style="display: block; width: 48px; height: 3px; background: var(--accent, #0B7386);"></span>
+          <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; line-height: 1.1; letter-spacing: -0.03em; color: var(--ink, #2E3033);">Technology</h2>
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">We license and maintain the same platforms our clients&rsquo; converters use, so files arrive in the form the press expects.</p>
+          <svg viewBox="0 0 300 120" fill="none" style="margin-top: 26px; width: 100%; max-width: 320px; height: auto;">
+            <rect x="8" y="38" width="46" height="46" rx="3" stroke="var(--rule-strong, #C4C8CD)" stroke-width="1.3"></rect>
+            <path d="M20 54h22M20 62h22M20 70h14" stroke="var(--rule-strong, #C4C8CD)" stroke-width="1.2" stroke-linecap="round"></path>
+            <rect x="112" y="38" width="46" height="46" rx="3" stroke="var(--ink-soft, #6E747B)" stroke-width="1.3"></rect>
+            <circle cx="135" cy="61" r="13" stroke="var(--ink, #2E3033)" stroke-width="1.3"></circle>
+            <path d="M135 44v-6M135 84v-6M158 61h-6M118 61h-6M151 45l-4 4M119 77l4-4M151 77l-4-4M119 45l4 4" stroke="var(--ink, #2E3033)" stroke-width="1.2" stroke-linecap="round" style="transform-origin: 135px 61px; animation: om-spin 8s linear infinite; animation-play-state: var(--anim, running);"></path>
+            <rect x="216" y="38" width="46" height="46" rx="3" stroke="var(--ink, #2E3033)" stroke-width="1.4"></rect>
+            <path d="m230 62 6 6 13-15" stroke="var(--mark, #B4452F)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="34" style="animation: om-draw 3.2s ease-in-out infinite; animation-play-state: var(--anim, running);"></path>
+            <path d="M58 61h50M162 61h50" stroke="var(--ink-soft, #6E747B)" stroke-width="1.3" stroke-dasharray="5 6" style="animation: om-dash 1.6s linear infinite; animation-play-state: var(--anim, running);"></path>
+            <circle cx="62" cy="61" r="4" fill="var(--accent, #0B7386)" style="animation: om-travel 6s linear infinite; animation-play-state: var(--anim, running);"></circle>
+            <path d="M8 100h254" stroke="var(--rule, #DADEE2)" stroke-width="1"></path>
+          </svg>
+        </div>
+        <div data-r="g" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--rule, #DADEE2); border: 1px solid var(--rule, #DADEE2);">
+          <sc-for list="{{ techPlatforms }}" as="t" hint-placeholder-count="6">
+            <div style="background: var(--paper, #F8F7F5); padding: 28px 26px 32px; display: flex; flex-direction: column; gap: 10px; min-height: 180px;">
+              <h3 style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; color: var(--ink, #2E3033);">{{ t.t }}</h3>
+              <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ t.b }}</p>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 44px 40px 0;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid var(--rule, #DADEE2);">
+        <h3 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 28px; letter-spacing: -0.015em; color: var(--ink, #2E3033);">How the stack is used</h3>
+        <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; color: var(--text-soft, #6E747B);">One workflow, three stages, recorded per SKU</span>
+      </div>
+      <div data-r="g" style="display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1px; background: var(--rule, #DADEE2); border-bottom: 1px solid var(--rule, #DADEE2);">
+        <sc-for list="{{ techWorkflow }}" as="w" hint-placeholder-count="3">
+          <div style="background: var(--paper, #F8F7F5); padding: 26px 24px 30px; display: flex; flex-direction: column; gap: 10px; min-height: 200px;">
+            <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 12px; color: var(--accent, #0B7386);">{{ w.n }}</span>
+            <h4 style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; color: var(--ink, #2E3033);">{{ w.t }}</h4>
+            <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ w.b }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 76px 40px 88px;">
+      <div data-r="g" style="display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 1px; background: var(--rule, #DADEE2); border: 1px solid var(--rule, #DADEE2);">
+        <div style="background: var(--paper, #F8F7F5); padding: 40px 38px; display: flex; flex-direction: column; gap: 18px;">
+          <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 28px; letter-spacing: -0.015em; color: var(--ink, #2E3033);">Your artwork, your data</h2>
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">Unreleased packaging is commercially sensitive. We treat it that way from the first file transfer.</p>
+          <div style="display: flex; flex-direction: column; gap: 12px; padding-top: 4px;">
+            <sc-for list="{{ securityControls }}" as="s" hint-placeholder-count="6">
+              <div style="display: flex; align-items: baseline; gap: 12px;">
+                <span style="flex: none; width: 6px; height: 6px; background: var(--mark, #B4452F); margin-top: 8px;"></span>
+                <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ s }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="background: var(--paper-2, #F2F1EE); padding: 40px 38px; display: flex; flex-direction: column; gap: 18px; justify-content: center;">
+          <h3 style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; color: var(--ink, #2E3033);">Auditing us</h3>
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">Procurement and security teams are welcome to audit the studio, review our controls and set additional requirements before work starts. We will complete your supplier questionnaire and hold to whatever is agreed in writing.</p>
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">Certification status and formal accreditations are listed in our capability pack, available on request.</p>
+          <a href="mailto:sales@olympus.co.in" style="align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; box-sizing: border-box; border-radius: 6px; white-space: nowrap; cursor: pointer; transition: transform 140ms ease, background 140ms ease, color 140ms ease; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: 600; font-size: 17px; color: var(--paper, #F8F7F5); background: var(--ink, #2E3033);" style-hover="background: var(--accent, #0B7386); transform: translateY(-1px);">Request the capability pack</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  </sc-if>
+
+  <!-- ===================== ABOUT ===================== -->
+  <sc-if value="{{ isAbout }}" hint-placeholder-val="{{ false }}">
+  <main>
+    <section  data-r="g p" style="max-width: 1240px; margin: 0 auto; padding: 76px 40px 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 72px;">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <div style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent, #0B7386);">About us</div>
+        <h1 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 52px; line-height: 1.1; letter-spacing: -0.035em; color: var(--ink, #2E3033);">Your Independent Global Partner for Packaging Premedia</h1>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; letter-spacing: 0; color: var(--ink, #2E3033);">Our Story</span>
+        <div style="display: flex; flex-direction: column; gap: 16px; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">
+          <p style="margin: 0;">Serving the industry since 1999, Olympus Premedia has evolved into India&rsquo;s fastest-growing independent service provider for packaging graphics. Headquartered in a state-of-the-art studio in Chennai, India, we support clients across the UK, USA, Europe, and Australia.</p>
+          <p style="margin: 0;">With a team of talented &amp; experienced professionals using industry standard tools and software, we deliver high Quality work with unmatched accuracy and shortest turnaround times.</p>
+        </div>
+      </div>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px 72px;">
+      <div  data-r="h" style="height: 420px; min-width: 0;"><image-slot id="about-banner" shape="rounded" radius="3" placeholder="Studio banner photograph"></image-slot></div>
+    </section>
+
+    <section style="background: var(--ink, #2E3033); margin-bottom: 72px;">
+      <div  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 52px 40px;">
+        <div  data-r="g neg" style="display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1px; background: var(--ink-line, #4A4D52); margin-left: -32px;">
+        <sc-for list="{{ aboutStats }}" as="s" hint-placeholder-count="3">
+          <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px; box-sizing: border-box; width: 100%; padding: 20px 32px; background: var(--ink, #2E3033);">
+            <span style="display: block; width: 48px; height: 3px; background: var(--accent-soft, #63C8DC);"></span>
+            <span style="font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; line-height: 1; letter-spacing: -0.03em; color: var(--paper, #F8F7F5);">{{ s.figure }}</span>
+            <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; letter-spacing: 0; color: var(--ink-tint, #DCDFE3);">{{ s.label }}</span>
+          </div>
+        </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px 72px;">
+      <h2 style="margin: 0 0 26px; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; letter-spacing: -0.03em; color: var(--ink, #2E3033);">The Olympus Difference</h2>
+      <div  data-r="g" style="display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1px; background: var(--rule, #DADEE2); border: 1px solid var(--rule, #DADEE2);">
+        <sc-for list="{{ difference }}" as="d" hint-placeholder-count="3">
+          <div style="background: var(--paper, #F8F7F5); padding: 30px 26px 34px; display: flex; flex-direction: column; gap: 12px; min-height: 190px;">
+            <h3 style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; letter-spacing: 0; color: var(--ink, #2E3033);">{{ d.title }}</h3>
+            <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ d.body }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px 88px;">
+      <div  data-r="g" style="display: grid; grid-template-columns: minmax(0,0.9fr) minmax(0,1.1fr); gap: 56px; align-items: start; margin-bottom: 30px;">
+        <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; letter-spacing: -0.03em; color: var(--ink, #2E3033);">Leadership</h2>
+        <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">Led by Vijay Ayyappan (CEO) and a management team with over 150 years of combined packaging experience, we combine deep technical knowledge with Western business standards.</p>
+      </div>
+      <div  data-r="g" style="display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 18px;">
+        <sc-for list="{{ leadership }}" as="p" hint-placeholder-count="4">
+          <div style="display: flex; flex-direction: column; gap: 12px; min-width: 0;">
+            <div style="height: 280px; min-width: 0;"><image-slot id="{{ p.slot }}" shape="rounded" radius="3" placeholder="{{ p.hint }}"></image-slot></div>
+            <div style="display: flex; flex-direction: column; gap: 2px;">
+              <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; letter-spacing: 0; color: var(--ink, #2E3033);">{{ p.name }}</span>
+              <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--text-soft, #6E747B);">{{ p.role }}</span>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px 84px;">
+      <div data-r="g" style="display: grid; grid-template-columns: minmax(0,0.9fr) minmax(0,1.1fr); gap: 56px; align-items: start; margin-bottom: 30px;">
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <span style="display: block; width: 48px; height: 3px; background: var(--accent, #0B7386);"></span>
+          <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; letter-spacing: -0.03em; color: var(--ink, #2E3033);">Who you will work with</h2>
+        </div>
+        <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">Programmes are run by named specialists, not a queue. These four are accountable for what leaves the studio, and they stay with your account.</p>
+      </div>
+      <div data-r="g m2" style="display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 1px; background: var(--rule, #DADEE2); border: 1px solid var(--rule, #DADEE2);">
+        <sc-for list="{{ specialists }}" as="s" hint-placeholder-count="4">
+          <div style="background: var(--paper, #F8F7F5); display: flex; flex-direction: column; min-width: 0;">
+            <div data-r="h" style="height: 240px; min-width: 0;"><image-slot id="{{ s.slot }}" shape="rect" placeholder="{{ s.hint }}"></image-slot></div>
+            <div style="padding: 22px 24px 28px; display: flex; flex-direction: column; gap: 8px;">
+              <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; color: var(--ink, #2E3033);">{{ s.role }}</span>
+              <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent, #0B7386);">{{ s.years }}</span>
+              <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ s.owns }}</p>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 76px 40px 88px;">
+      <div data-r="g" style="display: grid; grid-template-columns: minmax(0,0.9fr) minmax(0,1.1fr); gap: 56px; align-items: start; margin-bottom: 34px;">
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <span style="display: block; width: 48px; height: 3px; background: var(--accent, #0B7386);"></span>
+          <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; letter-spacing: -0.03em; color: var(--ink, #2E3033);">How we onboard</h2>
+        </div>
+        <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">Changing supplier is the risk, not the work. Nothing moves in one step: you see our output on live artwork before any volume transfers, and your incumbent stays in place until the process has settled.</p>
+      </div>
+      <div data-r="g" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px;">
+        <sc-for list="{{ onboarding }}" as="o" hint-placeholder-count="5">
+          <div style="background: var(--paper, #F8F7F5); box-shadow: 0 0 0 1px var(--rule, #DADEE2); padding: 26px 22px 30px; display: flex; flex-direction: column; gap: 10px; min-height: 200px;">
+            <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 10px;">
+              <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 12px; color: var(--accent, #0B7386);">{{ o.n }}</span>
+              <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; color: var(--ink-soft, #6E747B);">{{ o.d }}</span>
+            </div>
+            <h3 style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 20px; line-height: 1.1; color: var(--ink, #2E3033);">{{ o.t }}</h3>
+            <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ o.b }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section style="background: var(--ink, #2E3033);">
+      <div  data-r="g" style="display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); align-items: stretch;">
+        <div  data-r="p" style="padding: 76px 56px 76px max(40px, calc((100vw - 1240px) / 2 + 40px)); display: flex; flex-direction: column; gap: 26px; justify-content: center;">
+          <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 52px; line-height: 1.1; letter-spacing: -0.035em; color: var(--paper, #F8F7F5);">Based in Chennai.<br>Working globally.</h2>
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--ink-tint, #DCDFE3); max-width: 440px;">Our studio is in Chennai, India, but our clients spread across 4 continents, multiple time zones and verticals. We speak the common language of packaging.</p>
+          <div onClick="{{ goContact }}" style="align-self: flex-start; margin-top: 26px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; box-sizing: border-box; border-radius: 6px; white-space: nowrap; cursor: pointer; transition: transform 140ms ease, background 140ms ease, color 140ms ease; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: 600; font-size: 17px; color: var(--paper, #F8F7F5); background: transparent; border: 1px solid var(--paper, #F8F7F5);" style-hover="background: var(--paper, #F8F7F5); color: var(--ink, #2E3033); transform: translateY(-1px);">Talk to Our Team</div>
+        </div>
+        <div  data-r="h" style="min-width: 0; min-height: 460px; background: var(--paper-2, #F2F1EE);"><image-slot id="about-closer" shape="rect" placeholder="Portrait or studio photograph"></image-slot></div>
+      </div>
+    </section>
+  </main>
+  </sc-if>
+
+  <!-- ===================== CASE STUDIES ===================== -->
+  <sc-if value="{{ isCases }}" hint-placeholder-val="{{ false }}">
+  <main>
+    <section  data-r="g p" style="max-width: 1240px; margin: 0 auto; padding: 76px 40px 48px; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 64px; align-items: end;">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <div style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent, #0B7386);">Case studies</div>
+        <h1 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 52px; line-height: 1.1; letter-spacing: -0.035em; color: var(--ink, #2E3033);">Proven results across the global packaging value chain</h1>
+      </div>
+      <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 21px; line-height: 1.55; color: var(--text, #3E4247);">Three examples of what systematising artwork, repro and imagery under one provider does to accuracy, turnaround and cost.</p>
+    </section>
+
+    <section  data-r="g p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px 88px; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; align-items: stretch;">
+      <sc-for list="{{ casePageItems }}" as="c" hint-placeholder-count="3">
+        <div onClick="{{ c.open }}" style="background: var(--paper, #F8F7F5); border: 1px solid var(--rule, #DADEE2); display: flex; flex-direction: column; min-width: 0; cursor: pointer;" style-hover="border-color: var(--ink, #2E3033);">
+          <div style="height: 220px; min-width: 0;"><image-slot id="{{ c.slot }}" shape="rect" placeholder="{{ c.slotHint }}"></image-slot></div>
+          <div style="padding: 30px 28px 32px; display: flex; flex-direction: column; gap: 14px; flex: 1;">
+            <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft, #6E747B);">{{ c.tag }}</span>
+            <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 28px; line-height: 1.1; letter-spacing: 0; color: var(--ink, #2E3033);">{{ c.title }}</h2>
+            <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">{{ c.body }}</p>
+            <div style="display: flex; flex-direction: column; gap: 2px; padding-top: 14px; border-top: 1px solid var(--rule, #DADEE2); margin-top: auto;">
+              <span style="font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 28px; letter-spacing: 0; color: var(--accent, #0B7386);">{{ c.figure }}</span>
+              <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--text-soft, #6E747B);">{{ c.metric }}</span>
+            </div>
+          </div>
+        </div>
+      </sc-for>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px 88px;">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding-top: 4px;">
+        <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; color: var(--text-soft, #6E747B);">{{ caseRange }}</span>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <div onClick="{{ casePagePrev }}" style="display: flex; align-items: center; gap: 8px; font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; color: {{ casePrevColor }}; border: 1px solid var(--rule, #DADEE2); padding: 10px 18px; border-radius: var(--pill, 6px); cursor: {{ casePrevCursor }};" style-hover="border-color: var(--ink, #2E3033);">&larr; Previous</div>
+          <sc-for list="{{ casePages }}" as="pg" hint-placeholder-count="2">
+            <div onClick="{{ pg.go }}" style="min-width: 40px; text-align: center; font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; color: {{ pg.color }}; background: {{ pg.bg }}; border: 1px solid {{ pg.border }}; padding: 10px 12px; border-radius: var(--pill, 6px); cursor: pointer;" style-hover="border-color: var(--ink, #2E3033);">{{ pg.label }}</div>
+          </sc-for>
+          <div onClick="{{ casePageNext }}" style="display: flex; align-items: center; gap: 8px; font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; color: {{ caseNextColor }}; border: 1px solid var(--rule, #DADEE2); padding: 10px 18px; border-radius: var(--pill, 6px); cursor: {{ caseNextCursor }};" style-hover="border-color: var(--ink, #2E3033);">Next &rarr;</div>
+        </div>
+      </div>
+    </section>
+
+    <section  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 0 40px 88px;">
+      <div style="background: var(--rule, #DADEE2); padding: 44px 48px; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 28px; letter-spacing: -0.015em; color: var(--ink, #2E3033);">See what it would look like on your range</h2>
+          <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--text, #3E4247); max-width: 560px;">We audit a live set of artwork and report back on accuracy, turnaround and where cost sits.</p>
+        </div>
+        <a href="https://calendly.com/olympuspkg/" target="_blank" style="align-self: flex-start; display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; box-sizing: border-box; border-radius: 6px; white-space: nowrap; cursor: pointer; transition: transform 140ms ease, background 140ms ease, color 140ms ease; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: 600; font-size: 17px; color: var(--paper, #F8F7F5); background: var(--accent, #0B7386);" style-hover="background: var(--ink, #2E3033); transform: translateY(-1px);">Book a Packaging Graphics Audit</a>
+      </div>
+    </section>
+  </main>
+  </sc-if>
+
+  <!-- ===================== CONTACT ===================== -->
+  <sc-if value="{{ isContact }}" hint-placeholder-val="{{ false }}">
+  <main  data-r="g" style="display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); align-items: stretch;">
+
+    <div  data-r="p" style="background: var(--ink, #2E3033); padding: 72px 56px 72px max(40px, calc((100vw - 1240px) / 2 + 40px)); display: flex; flex-direction: column; gap: 26px;">
+      <div style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 16px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mist, #B8BCC2);">Contact us</div>
+      <span style="display: block; width: 48px; height: 3px; background: var(--accent-soft, #63C8DC);"></span>
+      <h1 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 52px; line-height: 1.1; letter-spacing: -0.035em; color: var(--paper, #F8F7F5); max-width: 460px;">Packaging graphics for global brands</h1>
+      <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--ink-tint, #DCDFE3); max-width: 420px;">Send us a live set of artwork and we will come back with an audit of accuracy, turnaround and where cost sits in your current chain.</p>
+
+      <div style="background: var(--paper, #F8F7F5); padding: 30px 32px; display: flex; flex-direction: column; gap: 16px; max-width: 480px; margin-top: 6px;">
+        <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft, #6E747B);">Olympus Premedia</span>
+        <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-size: 21px; line-height: 1.3; color: var(--ink, #2E3033);">&ldquo;Our focus on Internal RFT, instead of External RFT, is setting new standards for others to follow.&rdquo;</p>
+        <div  data-r="g" style="display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 18px; padding-top: 16px; border-top: 1px solid var(--rule, #DADEE2);">
+          <sc-for list="{{ contactStats }}" as="s" hint-placeholder-count="3">
+            <div style="display: flex; flex-direction: column; gap: 3px;">
+              <span style="font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 28px; letter-spacing: 0; color: var(--ink, #2E3033);">{{ s.figure }}</span>
+              <span style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-soft, #6E747B); line-height: 1.3;">{{ s.label }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 11px; margin-top: 8px;">
+        <a href="mailto:sales@olympus.co.in" style="display: flex; align-items: center; gap: 11px; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--ink-tint, #DCDFE3);" style-hover="color: var(--paper, #F8F7F5);">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6E747B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: none; stroke: var(--ink-soft, #6E747B);"><rect x="2.5" y="5" width="19" height="14" rx="2"></rect><path d="M3 6.5l9 6.5 9-6.5"></path></svg>
+          sales@olympus.co.in
+        </a>
+        <a href="tel:+914442119900" style="display: flex; align-items: center; gap: 11px; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--ink-tint, #DCDFE3);" style-hover="color: var(--paper, #F8F7F5);">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6E747B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: none; stroke: var(--ink-soft, #6E747B);"><path d="M21 16.9v2.6a2 2 0 0 1-2.2 2 19.4 19.4 0 0 1-8.4-3 19.1 19.1 0 0 1-5.9-5.9A19.4 19.4 0 0 1 1.5 4.2 2 2 0 0 1 3.5 2h2.6a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1l-1.1 1.1a15.3 15.3 0 0 0 5.8 5.8l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"></path></svg>
+          +91-44-42119900
+        </a>
+      </div>
+
+      <div style="display: flex; gap: 8px; flex-wrap: nowrap; margin-top: auto; padding-top: 32px;">
+        <sc-for list="{{ contactChips }}" as="c" hint-placeholder-count="3">
+          <span style="display: flex; align-items: center; gap: 6px; min-width: 0; font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; line-height: 1.3; color: var(--ink-tint, #DCDFE3); border: 1px solid var(--ink-line, #4A4D52); padding: 7px 12px; border-radius: var(--pill, 6px);">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#63C8DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; stroke: var(--accent-soft, #63C8DC);"><path d="M12 2.5 4.5 5.5v6c0 4.6 3.1 8.9 7.5 10.2 4.4-1.3 7.5-5.6 7.5-10.2v-6L12 2.5Z"></path><path d="m9.4 12.1 2 2 4-4"></path></svg>
+            {{ c }}
+          </span>
+        </sc-for>
+      </div>
+    </div>
+
+    <div  data-r="p" style="background: var(--paper, #F8F7F5); padding: 72px max(40px, calc((100vw - 1240px) / 2 + 40px)) 72px 56px;">
+      <div style="display: flex; flex-direction: column; gap: 20px; max-width: 560px;">
+        <h2 style="margin: 0; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 36px; letter-spacing: -0.03em; color: var(--ink, #2E3033);">Book a Packaging Graphics Audit</h2>
+        <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247);">Tell us where you want to start and we will come back with recommendations for your range.</p>
+        <div style="display: flex; flex-direction: column; gap: 7px;">
+          <label style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; color: var(--text, #3E4247);">Work Email</label>
+          <input placeholder="you@company.com" style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--ink, #2E3033); background: var(--paper, #F8F7F5); border: 1px solid var(--rule, #DADEE2); padding: 13px 14px; outline: none;" style-focus="border-color: var(--ink, #2E3033);">
+        </div>
+
+        <div  data-r="g" style="display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px;">
+          <sc-for list="{{ contactFields }}" as="f" hint-placeholder-count="3">
+            <div style="display: flex; flex-direction: column; gap: 7px;">
+              <label style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; color: var(--text, #3E4247);">{{ f.label }}</label>
+              <input placeholder="{{ f.placeholder }}" style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--ink, #2E3033); background: var(--paper, #F8F7F5); border: 1px solid var(--rule, #DADEE2); padding: 13px 14px; outline: none; width: 100%; box-sizing: border-box;" style-focus="border-color: var(--ink, #2E3033);">
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 10px; padding-top: 4px;">
+          <label style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; color: var(--text, #3E4247);">What do you want us to look at first?</label>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <sc-for list="{{ contactInterests }}" as="i" hint-placeholder-count="6">
+              <div onClick="{{ i.pick }}" style="display: flex; align-items: center; gap: 9px; font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; color: {{ i.color }}; background: {{ i.bg }}; border: 1px solid {{ i.border }}; padding: 9px 15px; border-radius: var(--pill, 6px); cursor: pointer;" style-hover="border-color: var(--ink, #2E3033);">
+                <span style="width: 13px; height: 13px; border-radius: 3px; border: 1px solid {{ i.dotBorder }}; background: {{ i.dot }}; flex: none;"></span>
+                {{ i.label }}
+              </div>
+            </sc-for>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 7px; padding-top: 4px;">
+          <label style="font-weight: 500; font-family: var(--body, 'Roboto'), sans-serif; font-size: 12px; color: var(--text, #3E4247);">Tell us how we can help</label>
+          <textarea rows="4" placeholder="Volumes, print processes, markets, timelines&hellip;" style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--ink, #2E3033); background: var(--paper, #F8F7F5); border: 1px solid var(--rule, #DADEE2); padding: 13px 14px; outline: none; resize: vertical; width: 100%; box-sizing: border-box;" style-focus="border-color: var(--ink, #2E3033);"></textarea>
+        </div>
+
+        <a href="https://calendly.com/olympuspkg/" target="_blank" style="margin-top: 4px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; box-sizing: border-box; border-radius: 6px; white-space: nowrap; cursor: pointer; transition: transform 140ms ease, background 140ms ease, color 140ms ease; font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: 600; font-size: 17px; color: var(--paper, #F8F7F5); background: var(--accent, #0B7386);" style-hover="background: var(--ink, #2E3033); transform: translateY(-1px);" >Book a Call <span style="font-size: 15px;">&#8599;</span></a>
+      </div>
+    </div>
+  </main>
+  </sc-if>
+
+  <footer style="background: var(--paper-2, #F2F1EE); color: var(--ink, #2E3033); border-top: 1px solid var(--rule, #DADEE2); margin-top: 0;">
+    <div  data-r="g p" style="max-width: 1240px; margin: 0 auto; padding: 64px 40px 34px; display: grid; grid-template-columns: minmax(0,1.25fr) minmax(0,0.75fr) minmax(0,0.9fr) minmax(0,1.1fr); gap: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="display: flex; align-items: center; gap: 11px;">
+          <img src="./assets/olympus-mark.png" alt="Olympus Premedia" style="width: 34px; height: 34px; object-fit: contain; display: block;">
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span style="font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: var(--head-weight, 640); font-size: 21px; letter-spacing: -0.02em; color: var(--ink, #2E3033);">Olympus</span>
+            <span style="font-family: var(--head, 'Bricolage Grotesque'), sans-serif; font-weight: 400; font-size: 21px; letter-spacing: -0.02em; color: var(--ink-soft, #6E747B);">Premedia</span>
+          </div>
+        </div>
+        <p style="margin: 0; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; line-height: 1.55; color: var(--text, #3E4247); max-width: 320px; text-wrap: pretty;">Packaging graphics and premedia services that help global brands win on shelf and in the market.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent, #0B7386);">Quick Links</span>
+          <span style="width: 26px; height: 2px; background: var(--accent, #0B7386);"></span>
+        </div>
+        <sc-for list="{{ footerItems }}" as="item" hint-placeholder-count="6">
+          <div onClick="{{ item.go }}" style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--text, #3E4247); cursor: pointer;" style-hover="color: var(--accent, #0B7386);">{{ item.label }}</div>
+        </sc-for>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent, #0B7386);">Services</span>
+          <span style="width: 26px; height: 2px; background: var(--accent, #0B7386);"></span>
+        </div>
+        <sc-for list="{{ footerServices }}" as="s" hint-placeholder-count="5">
+          <div onClick="{{ s.go }}" style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--text, #3E4247); cursor: pointer;" style-hover="color: var(--accent, #0B7386);">{{ s.label }}</div>
+        </sc-for>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <span style="font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent, #0B7386);">Contact Us</span>
+          <span style="width: 26px; height: 2px; background: var(--accent, #0B7386);"></span>
+        </div>
+        <a href="mailto:sales@olympus.co.in" style="display: flex; align-items: center; gap: 11px; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--text, #3E4247);" style-hover="color: var(--accent, #0B7386);">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6E747B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: none; stroke: var(--ink-soft, #6E747B);"><rect x="2.5" y="5" width="19" height="14" rx="2"></rect><path d="M3 6.5l9 6.5 9-6.5"></path></svg>
+          sales@olympus.co.in
+        </a>
+        <a href="tel:+914442119900" style="display: flex; align-items: center; gap: 11px; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--text, #3E4247);" style-hover="color: var(--accent, #0B7386);">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6E747B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: none; stroke: var(--ink-soft, #6E747B);"><path d="M21 16.9v2.6a2 2 0 0 1-2.2 2 19.4 19.4 0 0 1-8.4-3 19.1 19.1 0 0 1-5.9-5.9A19.4 19.4 0 0 1 1.5 4.2 2 2 0 0 1 3.5 2h2.6a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1l-1.1 1.1a15.3 15.3 0 0 0 5.8 5.8l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"></path></svg>
+          +91-44-42119900
+        </a>
+        <div style="display: flex; align-items: center; gap: 11px; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 18px; color: var(--text, #3E4247);">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6E747B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: none; stroke: var(--ink-soft, #6E747B);"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="2.8"></circle></svg>
+          Chennai, India
+        </div>
+        <a href="https://www.linkedin.com/company/olympus-premedia-pvt-ltd-/" target="_blank" style="align-self: flex-start; margin-top: 6px; display: flex; align-items: center; gap: 9px; font-family: var(--body, 'Roboto'), sans-serif; font-weight: 500; font-size: 16px; color: var(--paper, #F8F7F5); background: var(--ink, #2E3033); padding: 11px 20px; border-radius: var(--pill, 6px);" style-hover="background: var(--accent, #0B7386); color: var(--paper, #F8F7F5);">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="flex: none;"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM2.9 21.5h4.2V9.7H2.9v11.8Zm7.1 0h4.2v-6.4c0-1.7.3-3.3 2.4-3.3 2.1 0 2.1 1.9 2.1 3.4v6.3h4.2v-7.2c0-3.6-.8-6.3-5-6.3-2 0-3.4 1.1-3.9 2.2h-.1V9.7H10v11.8Z"></path></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <div  data-r="p" style="max-width: 1240px; margin: 0 auto; padding: 20px 40px 34px; border-top: 1px solid var(--rule, #DADEE2); font-family: var(--body, 'Roboto'), sans-serif; font-weight: 400; font-size: 15px; color: var(--ink-soft, #6E747B);">&copy; 2025. Olympus Premedia Pvt. Ltd. All Rights Reserved.</div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { page: "home", pfPage: 0, casePage: 0, audienceIndex: 0, interests: [], heroIndex: 0, menuOpen: false, whyIndex: 0, serviceIndex: 0, caseIndex: 0, svcSlide: 0, vw: 1440, navPanel: false };
+
+  componentDidMount() {
+    this.onResize = () => this.setState({ vw: window.innerWidth });
+    this.onResize();
+    window.addEventListener("resize", this.onResize);
+    this.audiences = ["Global Brands", "Converters", "Printers", "Brand Agencies", "Platemakers"];
+    const live = () => true;
+    this.timer = setInterval(() => {
+      if (!live()) return;
+      this.setState(s => ({ audienceIndex: (s.audienceIndex + 1) % this.audiences.length }));
+    }, 2600);
+    this.whyTimer = setInterval(() => {
+      if (!live()) return;
+      this.setState(s => ({ whyIndex: (s.whyIndex + 1) % 5 }));
+    }, 5000);
+    this.heroTimer = setInterval(() => {
+      if (!live()) return;
+      this.setState(s => ({ heroIndex: (s.heroIndex + 1) % 3 }));
+    }, 5000);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.onResize); clearInterval(this.timer); clearInterval(this.heroTimer); clearInterval(this.whyTimer); }
+
+  go(page) {
+    this.setState({ page }, () => window.scrollTo(0, 0));
+  }
+
+  renderVals() {
+    const page = this.state.page;
+    const pages = [
+      ["home", "Home"], ["services", "Services"], ["portfolio", "Portfolio"],
+      ["cases", "Case Studies"], ["standards", "Standards"], ["about", "About"]
+    ];
+    const footerPages = [
+      ["services", "Services"], ["portfolio", "Portfolio"],
+      ["cases", "Case Studies"], ["standards", "Standards"], ["about", "About us"]
+    ];
+    const serviceData = [
+      { num: "01", title: "Artwork Development & Roll-outs", tag: "Artwork", cta: "Get a Quote for Your Next Roll-out",
+        lead: "From master art creation to complex line extensions across languages and sizes, built so every variant inherits the master rather than being rebuilt.",
+        challenge: "Rolling out a new product line across dozens of flavors, sizes, and regions often leads to \"version creep,\" inconsistency, and slow time-to-market. Managing these variables manually is a recipe for error.",
+        solution: "Olympus acts as your dedicated production studio. We take a \"Master Artwork\" approach\u2014creating a technically perfect base file\u2014and systematically adapt it for every SKU in your range. Whether you need to change a nutritional panel, translate text for a new region, or resize a carton, we ensure the brand identity remains 100% consistent.",
+        capabilities: [
+          { t: "Master Art Creation", b: "We convert creative concepts into technically engineered digital files that serve as the foundation for all future variants." },
+          { t: "Line Extensions", b: "Rapid adaptation of artwork for new flavors, ingredients, or varieties." },
+          { t: "Size & Shape Adaptation", b: "Resizing artwork from one pack format to another (e.g., folding carton to flexible pouch)." },
+          { t: "Regulatory & Compliance", b: "Accurate placement of ingredient lists, barcodes (with appropriate magnification), and legal text." }],
+        audience: [
+          { t: "Brand Managers", b: "Launch complex product lines faster without sacrificing brand integrity." },
+          { t: "Agencies", b: "Offload the tedious mechanical production work so your team can focus on creative strategy." }],
+        slots: [{ id: "svc-1a", hint: "Master artwork on screen" }, { id: "svc-1b", hint: "Line extension family" }, { id: "svc-1c", hint: "Artwork detail / panel layout" }] },
+
+      { num: "02", title: "Prepress Reprographics", tag: "Prepress", cta: "Get a Quote for Your Repro",
+        lead: "Technically precise files for Litho, Flexo and Gravure printing, separated and tuned to the press and substrate they are destined for.",
+        challenge: "The same artwork behaves differently on every press and substrate. Files prepared without knowledge of the print condition come back with colour shifts, plugged shadows and lost detail, and the correction happens at the most expensive point in the chain.",
+        solution: "We separate for the press that will actually print the job. Curves, screening and trapping are set against the converter's condition, special channels are built explicitly, and a contract proof goes with the file so there is one reference on press.",
+        capabilities: [
+          { t: "Colour Separation", b: "Separations built for Litho, Flexo and Gravure, tuned per substrate and press condition." },
+          { t: "Trapping & Screening", b: "Trap sets, screen rulings and dot gain curves applied to converter specification." },
+          { t: "Special Channels", b: "White, varnish, foil and spot builds constructed as discrete, printable channels." },
+          { t: "Step & Repeat", b: "Imposition and step-and-repeat prepared to the converter's layout." }],
+        audience: [
+          { t: "Converters & Tradeshops", b: "Receive files that go straight to plate without rework." },
+          { t: "Brand Owners", b: "Hold one colour standard across every print process and every market." }],
+        slots: [{ id: "svc-2a", hint: "Separations on screen" }, { id: "svc-2b", hint: "Press sheet / plate detail" }, { id: "svc-2c", hint: "Screening / dot detail" }] },
+
+      { num: "03", title: "CGI and 3D Rendering", tag: "Imagery", cta: "Get a Quote for Your Pack Shots",
+        lead: "Photorealistic digital assets such as pack shots that replace physical prototyping, speed up approvals and serve e-commerce listings.",
+        challenge: "Physical mock-ups are slow and expensive, and they arrive too late to influence the decision. Meanwhile every retailer and channel wants pack imagery in a different crop, at a different angle, before the pack even exists.",
+        solution: "We build the pack in 3D from the same die-line and artwork that goes to print, so the render is a true representation rather than an illustration. One build then produces every angle, range shot and channel crop you need.",
+        capabilities: [
+          { t: "3D Pack Build", b: "Geometry built from the approved die-line, artwork mapped exactly as printed." },
+          { t: "Material Simulation", b: "Substrate, foil, varnish and transparency behaviour rendered realistically." },
+          { t: "Studio & In-Context", b: "Studio pack shots, group shots and in-context or shelf scenes." },
+          { t: "E-commerce Sets", b: "Channel-ready crops and angles delivered from a single build." }],
+        audience: [
+          { t: "Brand & E-commerce Teams", b: "Get listing imagery before first production run." },
+          { t: "Agencies", b: "Present and approve concepts without paying for physical mock-ups." }],
+        slots: [{ id: "svc-3a", hint: "CGI pack render" }, { id: "svc-3b", hint: "Range / group render" }, { id: "svc-3c", hint: "In-context shelf render" }] },
+
+      { num: "04", title: "Structural Design", tag: "Artwork", cta: "Get a Quote for Your Die-lines",
+        lead: "Production-ready die-lines and engineering for folding cartons and corrugated packaging, drawn to the converter's own specification.",
+        challenge: "Artwork built on an approximate die-line fails late: panels do not align, glue laps carry print, and varnish-free zones are missed. The problem surfaces at the converter, when the design is already signed off.",
+        solution: "We draw die-lines to the converter's drawings and tolerances, then issue the template the agency designs into. Geometry is correct before a single graphic element is placed.",
+        capabilities: [
+          { t: "Die-line Creation", b: "Folding carton and corrugated die-lines drawn to converter tolerance." },
+          { t: "Panel Mapping", b: "Panel-by-panel maps with dimensions and orientation for the artwork team." },
+          { t: "Technical Zones", b: "Bleed, glue-lap, crease and varnish-free zones defined and labelled." },
+          { t: "Design Templates", b: "Reusable structural templates issued to agencies and internal studios." }],
+        audience: [
+          { t: "Packaging Technologists", b: "Know the artwork matches the tooling before it ships." },
+          { t: "Agencies", b: "Design into a template that is already production-correct." }],
+        slots: [{ id: "svc-4a", hint: "Die-line drawing" }, { id: "svc-4b", hint: "Folding carton / corrugated sample" }, { id: "svc-4c", hint: "Panel map detail" }] },
+
+      { num: "05", title: "Colour Management and Contract Proofing", tag: "Prepress", cta: "Get a Quote for Colour Management",
+        lead: "One colour reference carried end to end, with contract proofs that predict the press rather than describe the file.",
+        challenge: "Brand colour drifts between markets, printers and processes, and everyone in the chain is judging against a different reference. Disputes get settled on press, which is the worst place to settle anything.",
+        solution: "We set one measurable colour reference per brand, profile it against each press and substrate, and issue contract proofs with control strips so the press has something objective to hit.",
+        capabilities: [
+          { t: "Brand Colour Standards", b: "Reference values and tolerances defined per brand and per colour." },
+          { t: "ICC Profiling", b: "Profiles built and maintained per press, substrate and process." },
+          { t: "Contract Proofing", b: "GMG contract proofs with control strips, produced to standard." },
+          { t: "Press Support", b: "Measurement guidance and sign-off support at the press." }],
+        audience: [
+          { t: "Brand Guardians", b: "Hold colour across markets and suppliers with evidence, not opinion." },
+          { t: "Print Buyers", b: "Compare quotes and output against one defined standard." }],
+        slots: [{ id: "svc-5a", hint: "Contract proof with control strip" }, { id: "svc-5b", hint: "Spectrophotometer measurement" }, { id: "svc-5c", hint: "Colour reference / swatch book" }] },
+
+      { num: "06", title: "Image Editing & Re-touching", tag: "Imagery", cta: "Get a Quote for Retouching",
+        lead: "Pack shots, ingredients and serving suggestions retouched to brand standards and prepared for the print process they are destined for.",
+        challenge: "Photography rarely arrives print-ready. Colour is off brand, backgrounds are inconsistent across a range, and images converted without regard for the print process lose exactly the detail the shot was hired for.",
+        solution: "We retouch to the brand reference and prepare each image for its destination process, so the same asset holds up across pack, POS and digital without being re-worked each time.",
+        capabilities: [
+          { t: "Clipping & Compositing", b: "Masking, path work and multi-element composites built cleanly." },
+          { t: "Colour Correction", b: "Images corrected to brand reference and matched across a range." },
+          { t: "Product Enhancement", b: "Ghosting, reflections, shadows and texture work on pack and food shots." },
+          { t: "Process Preparation", b: "CMYK and channel conversion tuned to the print process in question." }],
+        audience: [
+          { t: "Brand Teams", b: "One image library that works across pack, retail and digital." },
+          { t: "Studios & Agencies", b: "Volume retouching handled without adding internal headcount." }],
+        slots: [{ id: "svc-6a", hint: "Retouched pack shot" }, { id: "svc-6b", hint: "Before / after comparison" }, { id: "svc-6c", hint: "Food or ingredient shot" }] },
+
+      { num: "07", title: "Automation with PACKZ", tag: "Studio", cta: "Talk to Us About PACKZ",
+        lead: "We were first in the region to integrate PACKZ by Hybrid Software: native PDF editing and automated quality control inside our own studio.",
+        challenge: "Converting PDFs into native application files to make a small edit introduces risk at every step, and manual checking cannot keep pace with SKU volumes. Errors that survive preflight cost a plate.",
+        solution: "PACKZ lets us edit native PDF directly and run automated quality control on every file, so checks are consistent, repeatable and recorded rather than dependent on who happened to look at the file.",
+        capabilities: [
+          { t: "Native PDF Editing", b: "Edits made directly in PDF with no conversion or rebuild." },
+          { t: "Automated Preflight", b: "Rule-based checks run on every file before release." },
+          { t: "Verification", b: "Barcode, colour and technical verification with reported results." },
+          { t: "Automation & Audit", b: "Repeatable workflows with an audit trail per SKU." }],
+        audience: [
+          { t: "Quality & Compliance", b: "Evidence that every file was checked the same way." },
+          { t: "High-volume Programmes", b: "Automation that holds accuracy as SKU counts rise." }],
+        slots: [{ id: "svc-7a", hint: "PACKZ workflow on screen" }, { id: "svc-7b", hint: "Preflight report" }, { id: "svc-7c", hint: "Studio workstation" }] }
+    ];
+    const detail = serviceData[this.state.serviceIndex % serviceData.length];
+    const caseData = [
+      { tag: "Quality", slot: "cs-1", slotHint: "Proofing / QC on the studio floor", title: "Internal RFT as the standard", body: "Measuring right-first-time inside the studio rather than at the client end changed where errors get caught, and how few of them reach the converter.", figure: "Internal RFT", metric: "new benchmark for the category",
+        profile: [{ k: "About", v: "Brand Management Agency, USA" }, { k: "Industries", v: "CPG, FMCG, Private Labels" }, { k: "Revenue", v: "xx Mn" }],
+        "duration": "Ten months, ongoing",
+      "background": [
+      "The agency ran artwork for a portfolio of private-label and branded ranges across three US retailers. Files were built in-house, checked once, and sent on to the converter, where a proportion came back with corrections that had to travel the whole chain again.",
+      "Nobody could say how many. Right-first-time was measured at the client end, after the fact, from complaint volume rather than from anything the studio held. The number that mattered arrived weeks after the work that produced it.",
+      "We were brought in to take a share of the volume, and to bring the measurement inside the studio where it could still change an outcome."
+      ],
+      "phases": [
+      {
+      "n": "01",
+      "d": "Weeks 1-3",
+      "t": "Baseline the errors",
+      "b": "Every correction from the previous six months was categorised by type, stage and cause. Four categories accounted for most of the volume."
+      },
+      {
+      "n": "02",
+      "d": "Weeks 4-8",
+      "t": "Move the check inside",
+      "b": "Automated preflight on release, then a named second checker per SKU who did not build the file. Both results recorded against the job."
+      },
+      {
+      "n": "03",
+      "d": "Week 9 on",
+      "t": "Review weekly",
+      "b": "Error categories reviewed every week with the studio, and the preflight profile tightened whenever a category kept recurring."
+      }
+      ],
+      "quote": "We used to find out about a mistake when the converter did. Now we find out before the file leaves, and the number we report is one we can act on.",
+      "quoteRole": "Production Director, brand management agency",
+      "detail": [
+      {
+      "t": "Errors are categorised, not counted",
+      "b": "A dropped legal line and a wrong trap are different failures with different fixes. Splitting them made the weekly review useful rather than decorative."
+      },
+      {
+      "t": "The checker is named",
+      "b": "Second-pass review sits with a person, per SKU, recorded on the job. Accountability stopped being collective."
+      },
+      {
+      "t": "Preflight does the repeatable work",
+      "b": "Line weights, overprint, resolution, colour space and barcode integrity are machine checks. People spend their attention on judgement instead."
+      },
+      {
+      "t": "The record survives the job",
+      "b": "Output, proof measurements and the check record are archived together, so any file can be reconstructed and audited later."
+      }
+      ],
+      "learnings": [
+      "Measuring right-first-time where the work happens changes behaviour; measuring it at the client end only reports history.",
+      "A second pass is only independent if the checker did not build the file.",
+      "Most recurring errors are a profile problem, not a people problem."
+      ],
+      "pdfTitle": "Read the full Internal RFT case study",
+      "pdfBlurb": "Twelve pages: the error baseline, the four categories, the preflight profile we settled on, and the weekly review format the studio still runs.",
+      "pdfFacts": [
+      "12 pages",
+      "PDF, 4 MB",
+      "Client anonymised"
+      ],
+        challenge: "Errors were being found at the client's end of the chain, which meant every correction cost a round of approvals and, at worst, a plate.",
+        approach: ["Moved the right-first-time measurement inside the studio", "Automated preflight on every file before release", "Two-stage internal QC with a named checker per SKU", "Error categories logged and reviewed weekly"],
+        result: "Corrections are caught before the file leaves the studio, so the client sees fewer cycles and the converter receives files that go straight to plate.",
+        stats: [{ figure: "Internal RFT", label: "Measured in studio" }, { figure: "2-stage", label: "QC per SKU" }, { figure: "0", label: "Plate-stage surprises" }] },
+      { tag: "Scale", slot: "cs-2", slotHint: "Line extension family / range shot", title: "Range roll-out at scale", body: "Line extensions delivered from a single master art across markets and print processes, so every variant stays true to the original separation.", figure: "350,000+", metric: "SKUs delivered",
+        profile: [{ k: "About", v: "Global Brand Owner, Europe" }, { k: "Industries", v: "Food & Beverage, Home Care" }, { k: "Revenue", v: "xx Mn" }],
+        "duration": "Four years, ongoing",
+      "background": [
+      "A global brand owner across food, beverage and home care was adding variants faster than any single studio could absorb: new flavours, new sizes, new markets, each arriving with its own deadline and its own version of the artwork.",
+      "The masters existed, but not as a system. Variants were rebuilt from whichever file was nearest to hand, so a change to a legal line meant finding every place it had been copied to.",
+      "The brief was volume without drift: hold the master, inherit everything else, and keep a trail back from any pack on shelf to the file it came from."
+      ],
+      "phases": [
+      {
+      "n": "01",
+      "d": "Months 1-2",
+      "t": "One master per format",
+      "b": "Every pack format reduced to a single approved master, technically engineered, with regulated elements locked."
+      },
+      {
+      "n": "02",
+      "d": "Months 3-6",
+      "t": "Inheritance, not rebuilds",
+      "b": "Variants built by adaptation only. Copy and legal swaps checked against source documents rather than against the previous variant."
+      },
+      {
+      "n": "03",
+      "d": "Ongoing",
+      "t": "Version control per SKU",
+      "b": "Change logs per SKU, so any pack can be traced to its master and to the change that produced it."
+      }
+      ],
+      "quote": "Volume stopped being the constraint. The programme now moves at the pace our approvals move, which is the pace it should have moved at all along.",
+      "quoteRole": "Global Packaging Manager, brand owner",
+      "detail": [
+      {
+      "t": "Masters are locked, not shared",
+      "b": "Regulated elements live in the master and cannot be edited downstream. Adaptations inherit them and cannot quietly diverge."
+      },
+      {
+      "t": "Copy comes from source",
+      "b": "Legal and nutrition text is checked against the source document every time, never against the last variant that used it."
+      },
+      {
+      "t": "Capacity is elastic",
+      "b": "The studio flexes from a handful of artworks a day to over a hundred without changing the process or the checkers."
+      },
+      {
+      "t": "Every SKU is traceable",
+      "b": "Change logs mean a query about a pack on shelf is answered from the record, not from memory."
+      }
+      ],
+      "learnings": [
+      "Inheritance is the whole game at volume: a rebuild is a new chance to drift.",
+      "Version control is cheaper than the first recall it prevents.",
+      "Growth exposes process gaps before it exposes capacity gaps."
+      ],
+      "pdfTitle": "Read the full range roll-out case study",
+      "pdfBlurb": "Sixteen pages: the master structure, the inheritance rules, how copy is verified against source, and the change-log format behind 350,000 SKUs.",
+      "pdfFacts": [
+      "16 pages",
+      "PDF, 6 MB",
+      "Client anonymised"
+      ],
+        challenge: "Variant counts grow faster than studio capacity, and every flavour, size and market adds another chance for the artwork to drift from the master.",
+        approach: ["One approved master per pack format", "Variants built by inheritance, never rebuilt", "Copy and legal swaps checked against source documents", "Version control and change logs per SKU"],
+        result: "Volume roll-outs move at the pace of approvals rather than the pace of artwork, with every variant traceable back to its master.",
+        stats: [{ figure: "350,000+", label: "SKUs delivered" }, { figure: "50%", label: "Year-on-year growth" }, { figure: "120+", label: "Studio capacity" }] },
+      { tag: "Cost", slot: "cs-3", slotHint: "Repro / separation detail", title: "Cost out of the repro chain", body: "Consolidating artwork, repro and imagery with one provider removed duplicated handling between agency, tradeshop and converter.", figure: "30%", metric: "guaranteed savings",
+        profile: [{ k: "About", v: "Packaging Converter, UK" }, { k: "Industries", v: "Flexibles, Cartons, Labels" }, { k: "Revenue", v: "xx Mn" }],
+        "duration": "Six months to transfer",
+      "background": [
+      "A UK converter was buying artwork from one supplier, repro from a second and imagery from a third. Each handover meant a file was opened, checked and charged again, and each supplier held a different idea of what the brand colour was.",
+      "The cost was visible in three invoices. The duplication was not: it sat in the hours between them, and in the press time spent settling disagreements that should have been settled on a proof.",
+      "We consolidated all three into one chain with a single colour reference, and committed the saving up front rather than estimating it afterwards."
+      ],
+      "phases": [
+      {
+      "n": "01",
+      "d": "Weeks 1-4",
+      "t": "Map the handovers",
+      "b": "Every point where a file changed hands was logged with the hours and the checks it triggered. Three of them were pure duplication."
+      },
+      {
+      "n": "02",
+      "d": "Weeks 5-12",
+      "t": "One reference, one workflow",
+      "b": "A single measured colour reference per brand, and a native PDF workflow in PACKZ so nothing is rebuilt between stages."
+      },
+      {
+      "n": "03",
+      "d": "Months 4-6",
+      "t": "Transfer and report",
+      "b": "Volume moved across in stages with consolidated reporting per brand and per converter."
+      }
+      ],
+      "quote": "The saving was not a discount. It was work that stopped happening twice.",
+      "quoteRole": "Operations Director, packaging converter",
+      "detail": [
+      {
+      "t": "One provider, one file",
+      "b": "Artwork, repro and imagery run in the same chain, so the file is never reopened to be re-checked by the next supplier."
+      },
+      {
+      "t": "Colour is settled before press",
+      "b": "One measured reference and a contract proof with a control strip means the press has something objective to hit."
+      },
+      {
+      "t": "Native PDF end to end",
+      "b": "No conversion between stages, so no rebuild, and no risk introduced by a rebuild."
+      },
+      {
+      "t": "Reporting is consolidated",
+      "b": "Volume, turnaround and error categories reported per brand and per converter, from one source."
+      }
+      ],
+      "learnings": [
+      "Consolidation saves handling, not craft: the same checks still happen, once instead of three times.",
+      "A colour disagreement is cheap on a proof and expensive on a press.",
+      "A committed saving is a stronger promise than a projected one, and it survives procurement review."
+      ],
+      "pdfTitle": "Read the full cost consolidation case study",
+      "pdfBlurb": "Fourteen pages: the handover map, where the duplicated hours sat, the colour reference we set, and the six-month transfer plan.",
+      "pdfFacts": [
+      "14 pages",
+      "PDF, 5 MB",
+      "Client anonymised"
+      ],
+        challenge: "Artwork, repro and imagery sat with three different suppliers, so files were re-opened, re-checked and re-charged at every handover.",
+        approach: ["Single provider across artwork, repro and imagery", "One colour reference used end to end", "Native PDF workflow in PACKZ, no rebuild between stages", "Consolidated reporting per brand and per converter"],
+        result: "Duplicated handling disappeared from the chain, and the saving is committed up front rather than estimated after the fact.",
+        stats: [{ figure: "30%", label: "Guaranteed savings" }, { figure: "1", label: "Provider end to end" }, { figure: "27+ Years", label: "Remote delivery" }] }
+    ];
+    const caseDetail = caseData[this.state.caseIndex % caseData.length];
+    const whySlides = [
+      { heading: "Extension of your production team", body: "We sit right within your production workflow, systems of choice and operational setup to tackle your challenges - whether overnight delivery,  peak demand scaling or regional support", figure: "Embedded", figureLabel: "In your workflow" },
+      { heading: "Scale without limits", body: "We have delivered over 350,000 SKUs, growing 50% year on year.", figure: "350,000+", figureLabel: "SKUs delivered" },
+      { heading: "Internal Right-first-time (RFT) focus", body: "Our workflow focuses on internal RFT to eliminate errors before they reach you, setting new standards for accuracy.", figure: "Internal RFT", figureLabel: "Errors caught in studio" },
+      { heading: "Global partnerships", body: "We are at trusted brand guardian for brands, agencies and converters across the UK, USA, Europe and Australia", figure: "4", figureLabel: "Continents served" },
+      { heading: "Next-Gen automation", body: "We are the first in our region to integrate PACKZ by Hybrid Software for native PDF editing and automated quality control", figure: "PACKZ", figureLabel: "Native PDF workflow" }
+    ];
+    const why = whySlides[this.state.whyIndex % whySlides.length];
+    const audiences = ["Global Brands", "Converters", "Printers", "Brand Agencies", "Platemakers"];
+    const p = { ink: "#2E3033", line: "#4A4D52", soft: "#6E747B", mist: "#B8BCC2", tint: "#DCDFE3", accent: "#0B7386", accentSoft: "#63C8DC", mark: "#B4452F", markSoft: "#D9634A", text: "#3E4247", textSoft: "#6E747B" };
+    const headName = "Bricolage Grotesque";
+    const bodyName = "Roboto";
+    const neutrals = { paper: "#F8F7F5", paper2: "#F2F1EE", paper3: "#EBEAE6", rule: "#DADEE2", ruleStrong: "#C4C8CD", veil: "rgba(248,247,245,0.94)", veil2: "rgba(248,247,245,0.65)" };
+    const mapSrc = "./global-delivery-map.html?" + new URLSearchParams({
+      ink: p.ink, land: p.line, landline: p.soft, accent: p.accent,
+      accentsoft: p.accentSoft, paper: neutrals.paper, mark: p.mark || "#B4452F",
+      head: headName
+    }).toString();
+    const pill = "6px";
+
+    // ── Portfolio mosaic: three pages of seven tiles, same span rhythm each page
+    const mosaic = [
+      { span: 4, h: "460px" }, { span: 2, h: "460px" }, { span: 2, h: "320px" },
+      { span: 2, h: "320px" }, { span: 2, h: "320px" }, { span: 3, h: "360px" }, { span: 3, h: "360px" },
+      { span: 2, h: "300px" }, { span: 4, h: "300px" }, { span: 6, h: "420px" }
+    ];
+    const pfHints = [
+      "Feature case: full range artwork", "Repro / separations detail", "CGI bottle render",
+      "Corrugated secondary pack", "POP display", "Line extension family", "In-store branding",
+      "Spirits label range", "Flexible pouch family", "Colour separation proof",
+      "Shelf-ready case", "Confectionery multipack", "Cosmetics carton range", "Beverage can range",
+      "Private label roll-out", "Structural mock-up", "Dieline / artwork overlay",
+      "Household care bottle", "Seasonal pack variant", "Export market variant", "Range shot, full family",
+      "Shrink sleeve range", "Pet food flexibles", "Dairy carton range", "Personal care bottle set",
+      "Gift pack / seasonal carton", "Contract proof detail", "Retail-ready shelf tray", "Beauty carton, foiled",
+      "Sauce label family", "Chilled ready meal sleeve"
+    ];
+    const PF_PER_PAGE = 10, PF_PAGES = 3;
+    const pfPageIdx = Math.min(this.state.pfPage, PF_PAGES - 1);
+    const pfGo = (n) => this.setState({ pfPage: Math.max(0, Math.min(PF_PAGES - 1, n)) });
+    const pfPager = {
+      portfolioTiles: mosaic.map((m, i) => {
+        const n = pfPageIdx * PF_PER_PAGE + i;
+        return { span: m.span, h: m.h, id: "pf-" + (n + 1), hint: pfHints[n] || "Packaging work" };
+      }),
+      pfRange: `Page ${pfPageIdx + 1} of ${PF_PAGES} · ${PF_PAGES * PF_PER_PAGE} projects`,
+      pfPrev: () => pfGo(pfPageIdx - 1),
+      pfNext: () => pfGo(pfPageIdx + 1),
+      pfPrevColor: pfPageIdx === 0 ? "var(--text-soft, #6E747B)" : "var(--ink, #2E3033)",
+      pfNextColor: pfPageIdx === PF_PAGES - 1 ? "var(--text-soft, #6E747B)" : "var(--ink, #2E3033)",
+      pfPrevCursor: pfPageIdx === 0 ? "default" : "pointer",
+      pfNextCursor: pfPageIdx === PF_PAGES - 1 ? "default" : "pointer",
+      pfPages: Array.from({ length: PF_PAGES }, (_, i) => ({
+        label: String(i + 1), go: () => pfGo(i),
+        color: i === pfPageIdx ? "var(--paper, #F8F7F5)" : "var(--ink, #2E3033)",
+        bg: i === pfPageIdx ? "var(--ink, #2E3033)" : "transparent",
+        border: i === pfPageIdx ? "var(--ink, #2E3033)" : "var(--rule, #DADEE2)"
+      }))
+    };
+
+    // ── Case studies pager: three cards a page
+    const CS_PER_PAGE = 3;
+    const csPages = Math.max(1, Math.ceil(caseData.length / CS_PER_PAGE));
+    const csPageIdx = Math.min(this.state.casePage, csPages - 1);
+    const csGo = (n) => this.setState({ casePage: Math.max(0, Math.min(csPages - 1, n)) });
+    const csStart = csPageIdx * CS_PER_PAGE;
+    const casePager = {
+      casePageItems: caseData.slice(csStart, csStart + CS_PER_PAGE).map((c, i) => ({
+        ...c, open: () => this.setState({ caseIndex: csStart + i, page: "case" }, () => window.scrollTo(0, 0))
+      })),
+      caseRange: `Showing ${csStart + 1}–${Math.min(csStart + CS_PER_PAGE, caseData.length)} of ${caseData.length} case studies`,
+      casePagePrev: () => csGo(csPageIdx - 1),
+      casePageNext: () => csGo(csPageIdx + 1),
+      casePrevColor: csPageIdx === 0 ? "var(--text-soft, #6E747B)" : "var(--ink, #2E3033)",
+      caseNextColor: csPageIdx === csPages - 1 ? "var(--text-soft, #6E747B)" : "var(--ink, #2E3033)",
+      casePrevCursor: csPageIdx === 0 ? "default" : "pointer",
+      caseNextCursor: csPageIdx === csPages - 1 ? "default" : "pointer",
+      casePages: Array.from({ length: csPages }, (_, i) => ({
+        label: String(i + 1), go: () => csGo(i),
+        color: i === csPageIdx ? "var(--paper, #F8F7F5)" : "var(--ink, #2E3033)",
+        bg: i === csPageIdx ? "var(--ink, #2E3033)" : "transparent",
+        border: i === csPageIdx ? "var(--ink, #2E3033)" : "var(--rule, #DADEE2)"
+      }))
+    };
+
+    return {
+      mapSrc,
+      themeVars: `--paper: ${neutrals.paper}; --paper-2: ${neutrals.paper2}; --paper-3: ${neutrals.paper3}; --rule: ${neutrals.rule}; --rule-strong: ${neutrals.ruleStrong}; --paper-veil: ${neutrals.veil}; --paper-veil-2: ${neutrals.veil2}; --ink: ${p.ink}; --ink-line: ${p.line}; --ink-soft: ${p.soft}; --ink-mist: ${p.mist}; --ink-tint: ${p.tint}; --text: ${p.text || "var(--text, #3E4247)"}; --text-soft: ${p.textSoft || "var(--text-soft, #6E747B)"}; --accent: ${p.accent}; --accent-soft: ${p.accentSoft}; --mark: ${p.mark || "#B4452F"}; --mark-soft: ${p.markSoft || "#D9634A"}; --pill: ${pill}; --head: '${headName}'; --head-weight: 640; --body: '${bodyName}'; --anim: running;`,
+      audience: audiences[this.state.audienceIndex % audiences.length],
+      wordAnim: (this.state.audienceIndex % 2 === 0 ? "om-word-a" : "om-word-b") + " 520ms cubic-bezier(0.22, 0.9, 0.24, 1) both",
+      isHome: page === "home",
+      isServices: page === "services",
+      isPortfolio: page === "portfolio",
+      isAbout: page === "about",
+      isStandards: page === "standards",
+      goStandards: () => this.go("standards"),
+      standardsTeasers: [
+        "ISO 12647 process standards, grey balance held across the tone scale",
+        "GMG contract proofs, measured, with a control strip on every one",
+        "Five checks per file, automated and human, both recorded"
+      ],
+      isContact: page === "contact",
+      isCases: page === "cases",
+      isCase: page === "case",
+      isService: page === "service",
+      serviceLinks: serviceData.map((s, i) => ({
+        num: s.num, title: s.title, tag: s.tag, lead: s.lead,
+        open: () => this.setState({ serviceIndex: i, page: "service", menuOpen: false }, () => window.scrollTo(0, 0))
+      })),
+      footerItems: footerPages.map(([id, label]) => ({
+        label, go: () => this.go(id),
+        color: page === id ? "var(--accent, #0B7386)" : "var(--text, #3E4247)",
+        bg: page === id ? "var(--paper-3, #EBEAE6)" : "transparent"
+      })),
+      goHome: () => this.go("home"),
+      goServices: () => this.go("services"),
+      goPortfolio: () => this.go("portfolio"),
+      goAbout: () => this.go("about"),
+      homeServices: [
+        { num: "01", title: "Artwork Development & Roll-outs", body: "From Master art creation to complex line extensions across languages and sizes." },
+        { num: "02", title: "Prepress Reprographics", body: "Technically precise files for Litho, Flexo, and Gravure printing." },
+        { num: "03", title: "CGI and 3D Rendering", body: "Photorealistic digital assets such as pack shots that replace physical prototyping and speed up approvals and for e-commerce" },
+        { num: "04", title: "Structural Design", body: "Production-ready die-lines and engineering for folding cartons and corrugated packaging." },
+        { num: "05", title: "Colour Management and Contract Proofing", body: "One colour reference carried end to end, with contract proofs that predict the press." },
+        { num: "06", title: "Image Editing & Re-touching", body: "Pack shots and ingredient imagery retouched to brand and print standards." }
+      ],
+      serviceDetail: detail,
+      serviceSlides: detail.slots.map((s, i) => ({
+        id: s.id, hint: s.hint,
+        opacity: this.state.svcSlide === i ? 1 : 0,
+        events: this.state.svcSlide === i ? "auto" : "none",
+        dot: this.state.svcSlide === i ? "var(--accent, #0B7386)" : "rgba(46,48,51,0.28)",
+        pick: () => this.setState({ svcSlide: i })
+      })),
+      goServiceList: () => this.go("services"),
+      servicePrev: () => this.setState({ serviceIndex: (this.state.serviceIndex + serviceData.length - 1) % serviceData.length }, () => window.scrollTo(0, 0)),
+      serviceNext: () => this.setState({ serviceIndex: (this.state.serviceIndex + 1) % serviceData.length }, () => window.scrollTo(0, 0)),
+
+      goContact: () => this.go("contact"),
+      homeColor: "var(--text, #3E4247)",
+      homeBg: page === "home" ? "var(--paper, #F8F7F5)" : "transparent",
+      homeShadow: page === "home" ? "0 2px 10px rgba(46,48,51,0.16)" : "none",
+      servicesColor: "var(--text, #3E4247)",
+      servicesBg: page === "services" ? "var(--paper, #F8F7F5)" : "transparent",
+      servicesShadow: page === "services" ? "0 2px 10px rgba(46,48,51,0.16)" : "none",
+      restNavItems: pages.filter(([id]) => id !== "home" && id !== "services").map(([id, label]) => ({
+        label, go: () => this.go(id),
+        color: "var(--text, #3E4247)",
+        bg: page === id ? "var(--paper, #F8F7F5)" : "transparent",
+        shadow: page === id ? "0 2px 10px rgba(46,48,51,0.16)" : "none"
+      })),
+      navFull: this.state.vw >= 1140,
+      navCompact: this.state.vw < 1140,
+      navPanelOpacity: this.state.navPanel ? 1 : 0,
+      navPanelEvents: this.state.navPanel ? "auto" : "none",
+      toggleNavPanel: () => this.setState(s => ({ navPanel: !s.navPanel })),
+      navPanelItems: pages.map(([id, label]) => ({ label, go: () => this.setState({ page: id, navPanel: false }, () => window.scrollTo(0, 0)) })),
+      menuOpacity: this.state.menuOpen ? 1 : 0,
+      menuEvents: this.state.menuOpen ? "auto" : "none",
+      caretRotate: this.state.menuOpen ? "rotate(180deg)" : "rotate(0deg)",
+      openMenu: () => this.setState({ menuOpen: true }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      heroSlides: [
+        { slot: "home-hero", hint: "Hero: studio or packaging range shot" },
+        { slot: "home-hero-2", hint: "Hero 2: artwork on press / proofing" },
+        { slot: "home-hero-3", hint: "Hero 3: finished packs on shelf" }
+      ].map((s, i) => ({
+        ...s,
+        opacity: this.state.heroIndex === i ? 1 : 0,
+        events: this.state.heroIndex === i ? "auto" : "none",
+        dot: this.state.heroIndex === i ? "var(--accent, #0B7386)" : "var(--paper-veil-2, rgba(248,247,245,0.65))",
+        pick: () => this.setState({ heroIndex: i })
+      })),
+      contactStats: [
+        { figure: "350,000+", label: "SKUs delivered" },
+        { figure: "30%", label: "Guaranteed savings" },
+        { figure: "27+ Years", label: "Remote delivery" }
+      ],
+      contactChips: ["Secure file transfer", "24-hour turnaround", "100% data privacy"],
+      contactFields: [
+        { label: "Name", placeholder: "Jane Doe" },
+        { label: "Company", placeholder: "Brand or agency" },
+        { label: "Phone", placeholder: "+44" }
+      ],
+      contactInterests: ["Artwork Development & Roll-outs", "Prepress Reprographics", "CGI and 3D Rendering", "Structural Design", "Colour Management and Contract Proofing", "Image Editing & Re-touching"].map(label => {
+        const on = this.state.interests.includes(label);
+        return {
+          label,
+          pick: () => this.setState(s => ({
+            interests: s.interests.includes(label)
+              ? s.interests.filter(x => x !== label)
+              : s.interests.concat([label])
+          })),
+          color: on ? "var(--ink, #2E3033)" : "var(--text, #3E4247)",
+          bg: on ? "var(--paper-3, #EBEAE6)" : "var(--paper, #F8F7F5)",
+          border: on ? "var(--ink, #2E3033)" : "var(--rule, #DADEE2)",
+          dot: on ? "var(--accent, #0B7386)" : "transparent",
+          dotBorder: on ? "var(--accent, #0B7386)" : "var(--rule-strong, #C4C8CD)"
+        };
+      }),
+      whyHeading: why.heading,
+      whyBody: why.body,
+      animTeam: this.state.whyIndex === 0 ? 1 : 0,
+      animScale: this.state.whyIndex === 1 ? 1 : 0,
+      animRft: this.state.whyIndex === 2 ? 1 : 0,
+      animGlobal: this.state.whyIndex === 3 ? 1 : 0,
+      animAuto: this.state.whyIndex === 4 ? 1 : 0,
+      whyPrev: () => this.setState(s => ({ whyIndex: (s.whyIndex + whySlides.length - 1) % whySlides.length })),
+      whyNext: () => this.setState(s => ({ whyIndex: (s.whyIndex + 1) % whySlides.length })),
+      whyDots: whySlides.map((_, i) => ({
+        pick: () => this.setState({ whyIndex: i }),
+        color: this.state.whyIndex === i ? "var(--accent-soft, #63C8DC)" : "var(--ink-line, #4A4D52)"
+      })),
+      assurances: [
+        { label: "No Obligation Consultation", icon: "M12 3a9 9 0 0 0-9 9v4a3 3 0 0 0 3 3h1v-7H5m14 7h1a3 3 0 0 0 3-3v-4a9 9 0 0 0-9-9m5 9v7h-2" },
+        { label: "Fast Response", icon: "M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z" },
+        { label: "100% Data Security", icon: "M12 2.5 4.5 5.5v6c0 4.6 3.1 8.9 7.5 10.2 4.4-1.3 7.5-5.6 7.5-10.2v-6L12 2.5Zm-2.6 9.6 2 2 4-4" }
+      ],
+      footerServices: [["Artwork Roll-outs", 0], ["Prepress Reprographics", 1], ["CGI & 3D Rendering", 2], ["Structural Design", 3], ["Colour Management", 4]]
+        .map(([label, i]) => ({ label, go: () => this.setState({ serviceIndex: i, page: "service" }, () => window.scrollTo(0, 0)) })),
+      techPlatforms: [
+        { t: "ESKO", b: "Automation Engine, ArtPro+ and Plato for separations, trapping, step-and-repeat and job automation." },
+        { t: "Adobe Creative Cloud", b: "Illustrator, Photoshop and InDesign for master artwork build, adaptation and retouching." },
+        { t: "PACKZ by Hybrid Software", b: "Native PDF editing and rule-based preflight, run on every file before it is released." },
+        { t: "GMG ColorProof", b: "Contract proofs on calibrated Epson devices, profiled per printing condition and re-linearised on a fixed cycle." },
+        { t: "Colour measurement", b: "Spectrophotometry against brand references, with a control strip and measurement report on every proof." },
+        { t: "Managed file transfer", b: "Secure transfer with per-programme segregation, named-user access and an audit trail." }
+      ],
+      techWorkflow: [
+        { n: "01", t: "Intake and set-up", b: "Job logged with die-line, copy documents and print specification. Templates, curves and profiles are selected before any work starts." },
+        { n: "02", t: "Build and automate", b: "Artwork built in ESKO and Adobe, edited natively in PACKZ, and checked by rule rather than by habit." },
+        { n: "03", t: "Proof and release", b: "GMG contract proof measured and issued, then output, measurements and the check record archived against the SKU." }
+      ],
+      categories: ["Food & Beverage", "Home & Personal Care", "Spirits", "Confectionery", "Corrugated", "CGI"],
+      ...pfPager,
+      ...casePager,
+      caseDetail: caseDetail,
+      goCases: () => this.go("cases"),
+      casePrev: () => this.setState({ caseIndex: (this.state.caseIndex + caseData.length - 1) % caseData.length }, () => window.scrollTo(0, 0)),
+      caseNext: () => this.setState({ caseIndex: (this.state.caseIndex + 1) % caseData.length }, () => window.scrollTo(0, 0)),
+      difference: [
+        { title: "Technology First", body: "We invest upfront in next-gen tools like PACKZ, ESKO and GMG to drive automation." },
+        { title: "Scalability", body: "We have the experience to scale client engagements from 2 artworks per day to over 100 per day." },
+        { title: "Continuous Improvement", body: "Our CPI-driven process allows even clients with no offshoring experience to transition seamlessly." }
+      ],
+      colourStandards: [
+        { t: "Process standards", b: "Separations, dot gain and tone reproduction built to the ISO 12647 family for offset, flexo and gravure. Confirm which parts apply to your programme and we work to it." },
+        { t: "Grey balance", b: "Neutral grey balance held across the tone scale so a file behaves the same on a proof in Chennai and a press in Leeds or Chicago." },
+        { t: "Brand colour libraries", b: "Spot colours held as named, measured references per brand, not per job, with tolerances recorded and reused across every SKU." },
+        { t: "Substrate compensation", b: "Curves per substrate and print process, so board, film and label stock each get the separation they need rather than a shared default." },
+        { t: "Contract proofing", b: "GMG ColorProof on calibrated Epson devices, profiled to the printing condition being simulated and re-linearised on a fixed cycle." },
+        { t: "Measurement trail", b: "Every proof carries a control strip and a measurement report, so a disagreement about colour is settled with numbers." }
+      ],
+      qcSteps: [
+        { n: "01", t: "Intake check", b: "Files, die-lines, copy documents and print specification logged against the job before any work starts. Missing inputs are raised the same day." },
+        { n: "02", t: "Automated preflight", b: "PACKZ runs the checks that machines do better than people: minimum line weights, overprint, trapping, resolution, colour space, barcode integrity." },
+        { n: "03", t: "Studio build", b: "Artwork built or adapted from the approved master. Variants inherit; nothing is rebuilt from scratch." },
+        { n: "04", t: "Independent second pass", b: "A checker who did not build the file reviews it against the source documents and the print specification." },
+        { n: "05", t: "Release record", b: "Approved output, proof measurements and the check record are stored together, so any file can be reconstructed and audited later." }
+      ],
+      securityControls: [
+        "Named-user access; no shared logins across the studio",
+        "Client work segregated per programme, visible only to the assigned team",
+        "Secure managed file transfer; no consumer file-sharing services",
+        "NDAs signed at company and individual level before onboarding",
+        "Devices controlled and monitored; no removable media in production areas",
+        "Retention and deletion handled to your schedule, confirmed in writing"
+      ],
+      onboarding: [
+        { n: "01", t: "Scoping call", d: "45 minutes", b: "Volumes, formats, print processes, approval chain and the systems you already use." },
+        { n: "02", t: "Pilot on live work", d: "1-2 weeks", b: "A real set of artwork, run our way, at no cost. You compare it against your current supplier's output." },
+        { n: "03", t: "Standards lock", d: "1 week", b: "Colour references, templates, naming, preflight profile and check-list agreed and documented." },
+        { n: "04", t: "Parallel running", d: "2-4 weeks", b: "We take a share of live volume alongside your incumbent while the process settles." },
+        { n: "05", t: "Full transfer", d: "From week 6", b: "Volume moves across with a named team, agreed turnarounds and monthly reporting." }
+      ],
+      specialists: [
+        { role: "Colour Management Lead", years: "18 years in trade", owns: "Owns the colour reference for every brand we hold, and signs off contract proofs.", slot: "spec-colour", hint: "Portrait: colour lead" },
+        { role: "Studio Manager, Artwork", years: "16 years in trade", owns: "Owns master artwork and roll-out schedules across languages and formats.", slot: "spec-studio", hint: "Portrait: studio manager" },
+        { role: "Prepress & PACKZ Lead", years: "14 years in trade", owns: "Owns separations, step-and-repeat and the automated preflight profiles.", slot: "spec-prepress", hint: "Portrait: prepress lead" },
+        { role: "Quality & Compliance Lead", years: "12 years in trade", owns: "Owns the second-pass check and the release record for every file that leaves.", slot: "spec-quality", hint: "Portrait: quality lead" }
+      ],
+      clientProof: [
+        { f: "11", l: "of the top 30 UK own-label programmes" },
+        { f: "40+", l: "brand owners and converters served" },
+        { f: "4", l: "continents supported from one studio" }
+      ],
+      leadership: [
+        { name: "Vijay Ayyappan", role: "CEO", slot: "lead-vijay", hint: "Portrait: Vijay Ayyappan" },
+        { name: "Sridhar", role: "Leadership team", slot: "lead-sridhar", hint: "Portrait: Sridhar" },
+        { name: "Hari Ayyappan", role: "Leadership team", slot: "lead-hari", hint: "Portrait: Hari Ayyappan" },
+        { name: "Ramkumar", role: "Leadership team", slot: "lead-ramkumar", hint: "Portrait: Ramkumar" }
+      ],
+      aboutStats: [
+        { figure: "27+ Years", label: "Remote processing & delivering" },
+        { figure: "120+", label: "Studio Capacity" },
+        { figure: "350,000+", label: "SKUs and counting" }
+      ],
+    };
+  }
+}
+
+</script>
+</body>
+</html>
